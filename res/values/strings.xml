@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Work Tracker</string>
+    
+    <!-- Various activity titles -->
+    <string name="dashboard_title">@string/app_name</string>
+
+    <!-- Dashboard -->
+    <string name="btn_dashboard_new_list">New List</string>
+    <string name="btn_dashboard_new_item">New List Item</string>
+    <string name="btn_dashboard_previous_lists">Previous Lists</string>
+    <string name="btn_dashboard_settings">Settings</string>
+</resources>

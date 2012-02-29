@@ -1,0 +1,10 @@
+<resources>
+    <style name="Theme.WorkTracker" parent="Theme.Sherlock.Light.DarkActionBar">
+        <item name="divider">@null</item>
+        <item name="titleTextStyle">@style/action_bar_title</item>
+        <item name="actionMenuTextColor">@color/action_item_text_color</item>
+        <item name="android:buttonStyle">@style/base_button</item>
+        <item name="android:homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_dark</item>
+    </style>
+
+</resources>

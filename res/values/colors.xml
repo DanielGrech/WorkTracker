@@ -1,0 +1,17 @@
+<resources>
+    <color name="dashboard_btn_text_color">#ff29549f</color>
+    <color name="action_bar_title">#FFFFFF</color>
+    <color name="action_item_text_color">#FFFFFF</color>
+    <color name="base_button_text_color">#333333</color>
+    <color name="border_color">#DEDEDE</color>
+            
+   	<!-- Gradient Buttons -->
+   	<color name="green_button_gradient_dark">#53933f</color>
+   	<color name="green_button_gradient_light">#70c656</color>
+   	
+   	<color name="silver_button_gradient_dark">#D6D6D6</color>
+   	<color name="silver_button_gradient_light">#EFEFEF</color>
+   	
+   	<color name="blue_button_gradient_dark">#0000A3</color>
+   	<color name="blue_button_gradient_light">#0000D6</color>
+</resources>

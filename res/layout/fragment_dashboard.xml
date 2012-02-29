@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.DGSD.WorkTracker.View.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:animateLayoutChanges="true">
+    
+    <Button android:id="@+id/btn_dashboard_new_list"
+        style="@style/DashboardButton"
+        android:contentDescription="@string/btn_dashboard_new_list"
+        android:text="@string/btn_dashboard_new_list"
+        android:drawableTop="@drawable/ic_dashboard_new_list" />
+    <Button android:id="@+id/btn_dashboard_new_item"
+        style="@style/DashboardButton"
+        android:contentDescription="@string/btn_dashboard_new_item"
+        android:text="@string/btn_dashboard_new_item"
+        android:drawableTop="@drawable/ic_dashboard_new_item" />
+    <Button android:id="@+id/btn_dashboard_previous_lists"
+        style="@style/DashboardButton"
+        android:contentDescription="@string/btn_dashboard_previous_lists"
+        android:text="@string/btn_dashboard_previous_lists"
+        android:drawableTop="@drawable/ic_dashboard_previous_lists" />
+    <Button android:id="@+id/btn_dashboard_settings"
+        style="@style/DashboardButton"
+        android:contentDescription="@string/btn_dashboard_settings"
+        android:text="@string/btn_dashboard_settings"
+        android:drawableTop="@drawable/ic_dashboard_settings" />    
+</com.DGSD.WorkTracker.View.DashboardLayout>
