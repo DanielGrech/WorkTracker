@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.DGSD.InvoiceTracker"
+    package="com.DGSD.WorkTracker"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -21,9 +21,42 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
+
+        <activity 
+            android:name="com.DGSD.WorkTracker.Activity.ItemListActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+	            <action android:name="android.intent.action.SEARCH" />
+	        </intent-filter>
+	        <meta-data android:name="android.app.searchable"
+	                   android:resource="@xml/searchable_items"/>
+        </activity>    
+            
         <activity android:name="com.DGSD.WorkTracker.Activity.DashboardActivity" />
+        <activity android:name="com.DGSD.WorkTracker.Activity.NewItemActivity" android:windowSoftInputMode="stateHidden"/>
         
+        <!-- Services -->
+        <service android:name="com.DGSD.WorkTracker.Service.DatabaseService" android:permission="com.DGSD.WorkTracker.database_access"/>
+        
+        <!-- Content Providers -->
+        <provider android:authorities="com.DGSD.WorkTracker.Data.Provider.ItemProvider"
+            android:multiprocess="true"
+            android:permission="com.DGSD.WorkTracker.database_access"
+            android:name="com.DGSD.WorkTracker.Data.Provider.ItemProvider" />
     </application>
 
+    <!-- Custom Permissions -->
+    <permission android:name="com.DGSD.WorkTracker.database_access"
+		android:label="@string/permission_database_access"
+		android:description="@string/permission_database_access_description"
+		android:protectionLevel="normal" />  
+		
+   	<permission android:name="com.DGSD.WorkTracker.receive_broadcast_permission"
+		android:label="@string/permission_receive_broadcast"
+		android:description="@string/permission_receive_broadcast_description"
+		android:protectionLevel="normal" />  
+		
+    <!-- Permission Grants -->
+    <uses-permission android:name="com.DGSD.WorkTracker.database_access" />
+    <uses-permission android:name="com.DGSD.WorkTracker.receive_broadcast_permission" />
 </manifest>

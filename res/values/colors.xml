@@ -4,7 +4,10 @@
     <color name="action_item_text_color">#FFFFFF</color>
     <color name="base_button_text_color">#333333</color>
     <color name="border_color">#DEDEDE</color>
-            
+	<color name="light_grey_text">#666666</color>
+	<color name="dark_grey_text">#3D3D3D</color>
+	<color name="section_title">#5D83C1</color>
+	    
    	<!-- Gradient Buttons -->
    	<color name="green_button_gradient_dark">#53933f</color>
    	<color name="green_button_gradient_light">#70c656</color>

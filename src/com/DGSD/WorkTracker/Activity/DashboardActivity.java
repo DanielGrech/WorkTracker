@@ -6,7 +6,7 @@ package com.DGSD.WorkTracker.Activity;
 
 import android.support.v4.app.Fragment;
 
-import com.DGSD.InvoiceTracker.R;
+import com.DGSD.WorkTracker.R;
 import com.DGSD.WorkTracker.Fragment.DashboardFragment;
 
 

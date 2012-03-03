@@ -21,7 +21,6 @@ import com.actionbarsherlock.app.SherlockDialogFragment;
 public abstract class BaseFragment extends SherlockDialogFragment implements Receiver {
 	private static final String TAG = BaseFragment.class.getSimpleName();
 	
-		
 	/**
 	 * Callback to give this fragment a chance to register to receive
 	 * updates. This method should be overridden in a subclass if 
@@ -77,6 +76,8 @@ public abstract class BaseFragment extends SherlockDialogFragment implements Rec
      */
     @Override
     public void onReceive(Context context, Intent intent) {
-    	if(WTApp.DEBUG) Log.w(TAG, "No onReceive() listener registered");
+    	if(WTApp.DEBUG) {
+    		Log.w(TAG, "No onReceive() listener registered");
+    	}
     }
 }

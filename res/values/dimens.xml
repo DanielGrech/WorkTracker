@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="padding_small">3dip</dimen>
+	<dimen name="padding">6dip</dimen>
+	<dimen name="padding_large">12dip</dimen>
+</resources>

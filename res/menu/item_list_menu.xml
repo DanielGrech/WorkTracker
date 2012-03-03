@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/sort"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_sort"
+        android:title="@string/sort_by">
+        
+        <menu >
+            <item
+                android:id="@+id/sort_by_name"
+                android:title="@string/sort_by_name" />
+            
+            <item
+                android:id="@+id/sort_by_price"
+                android:title="@string/sort_by_price" />
+        </menu>
+        
+    </item>
+    
+    <item
+        android:id="@+id/add"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_add"
+        android:title="@string/add_item"
+        android:titleCondensed="@string/add"/>
+    
+    <item
+    	android:id="@+id/search"
+    	android:enabled="true"
+        android:icon="@drawable/ic_action_search"
+        android:showAsAction="always"
+        android:title="@string/search_items"
+        android:titleCondensed="@string/search"/>
+</menu>

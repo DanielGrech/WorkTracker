@@ -10,19 +10,30 @@
         android:contentDescription="@string/btn_dashboard_new_list"
         android:text="@string/btn_dashboard_new_list"
         android:drawableTop="@drawable/ic_dashboard_new_list" />
-    <Button android:id="@+id/btn_dashboard_new_item"
-        style="@style/DashboardButton"
-        android:contentDescription="@string/btn_dashboard_new_item"
-        android:text="@string/btn_dashboard_new_item"
-        android:drawableTop="@drawable/ic_dashboard_new_item" />
     <Button android:id="@+id/btn_dashboard_previous_lists"
         style="@style/DashboardButton"
         android:contentDescription="@string/btn_dashboard_previous_lists"
         android:text="@string/btn_dashboard_previous_lists"
         android:drawableTop="@drawable/ic_dashboard_previous_lists" />
+    <Button android:id="@+id/btn_dashboard_new_item"
+        style="@style/DashboardButton"
+        android:contentDescription="@string/btn_dashboard_new_item"
+        android:text="@string/btn_dashboard_new_item"
+        android:drawableTop="@drawable/ic_dashboard_new_item" />
+    <Button android:id="@+id/btn_dashboard_previous_items"
+        style="@style/DashboardButton"
+        android:contentDescription="@string/btn_dashboard_previous_items"
+        android:text="@string/btn_dashboard_previous_items"
+        android:drawableTop="@drawable/ic_dashboard_items" />
     <Button android:id="@+id/btn_dashboard_settings"
         style="@style/DashboardButton"
         android:contentDescription="@string/btn_dashboard_settings"
         android:text="@string/btn_dashboard_settings"
-        android:drawableTop="@drawable/ic_dashboard_settings" />    
+        android:drawableTop="@drawable/ic_dashboard_settings" /> 
+   
+    <Button android:id="@+id/btn_dashboard_settings_temp"
+        style="@style/DashboardButton"
+        android:contentDescription="@string/btn_dashboard_settings"
+        android:text="Temp"
+        android:drawableTop="@drawable/ic_dashboard_settings" /> 
 </com.DGSD.WorkTracker.View.DashboardLayout>

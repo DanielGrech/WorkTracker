@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.DGSD.InvoiceTracker;
+package com.DGSD.WorkTracker;
 
 public final class R {
     public static final class attr {
@@ -381,6 +381,14 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int subtitleTextStyle=0x7f010001;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int text=0x7f010047;
         /**  Text color, typeface, size, and style for the text inside of a popup menu. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -490,13 +498,13 @@ containing a value of this type.
         public static final int windowSplitActionBar=0x7f010030;
     }
     public static final class bool {
-        public static final int abs__action_bar_embed_tabs=0x7f050000;
-        public static final int abs__action_bar_expanded_action_views_exclusive=0x7f050002;
+        public static final int abs__action_bar_embed_tabs=0x7f060000;
+        public static final int abs__action_bar_expanded_action_views_exclusive=0x7f060002;
         /**  Whether action menu items should be displayed in ALLCAPS or not.
          Defaults to true. If this is not appropriate for specific locales
          it should be disabled in that locale's resources. 
          */
-        public static final int abs__config_actionMenuItemAllCaps=0x7f050004;
+        public static final int abs__config_actionMenuItemAllCaps=0x7f060004;
         /**  Whether action menu items should obey the "withText" showAsAction
          flag. This may be set to false for situations where space is
          extremely limited. 
@@ -504,37 +512,40 @@ containing a value of this type.
          flag. This may be set to false for situations where space is
          extremely limited. 
          */
-        public static final int abs__config_allowActionMenuItemTextWithIcon=0x7f050005;
+        public static final int abs__config_allowActionMenuItemTextWithIcon=0x7f060005;
         /**  Sets whether menu shortcuts should be displayed on panel menus when
          a keyboard is present. 
          */
-        public static final int abs__config_showMenuShortcutsWhenKeyboardPresent=0x7f050003;
-        public static final int abs__split_action_bar_is_narrow=0x7f050001;
+        public static final int abs__config_showMenuShortcutsWhenKeyboardPresent=0x7f060003;
+        public static final int abs__split_action_bar_is_narrow=0x7f060001;
     }
     public static final class color {
-        public static final int abs__background_holo_dark=0x7f060000;
-        public static final int abs__background_holo_light=0x7f060001;
-        public static final int abs__bright_foreground_disabled_holo_dark=0x7f060004;
-        public static final int abs__bright_foreground_disabled_holo_light=0x7f060005;
-        public static final int abs__bright_foreground_holo_dark=0x7f060002;
-        public static final int abs__bright_foreground_holo_light=0x7f060003;
-        public static final int abs__bright_foreground_inverse_holo_dark=0x7f060006;
-        public static final int abs__bright_foreground_inverse_holo_light=0x7f060007;
-        public static final int abs__primary_text_holo_dark=0x7f060013;
-        public static final int abs__primary_text_holo_light=0x7f060014;
-        public static final int action_bar_title=0x7f060009;
-        public static final int action_item_text_color=0x7f06000a;
-        public static final int base_button_text_color=0x7f06000b;
-        public static final int blue_button_gradient_dark=0x7f060011;
-        public static final int blue_button_gradient_light=0x7f060012;
-        public static final int border_color=0x7f06000c;
-        public static final int dashboard_btn_text_color=0x7f060008;
+        public static final int abs__background_holo_dark=0x7f070000;
+        public static final int abs__background_holo_light=0x7f070001;
+        public static final int abs__bright_foreground_disabled_holo_dark=0x7f070004;
+        public static final int abs__bright_foreground_disabled_holo_light=0x7f070005;
+        public static final int abs__bright_foreground_holo_dark=0x7f070002;
+        public static final int abs__bright_foreground_holo_light=0x7f070003;
+        public static final int abs__bright_foreground_inverse_holo_dark=0x7f070006;
+        public static final int abs__bright_foreground_inverse_holo_light=0x7f070007;
+        public static final int abs__primary_text_holo_dark=0x7f070016;
+        public static final int abs__primary_text_holo_light=0x7f070017;
+        public static final int action_bar_title=0x7f070009;
+        public static final int action_item_text_color=0x7f07000a;
+        public static final int base_button_text_color=0x7f07000b;
+        public static final int blue_button_gradient_dark=0x7f070014;
+        public static final int blue_button_gradient_light=0x7f070015;
+        public static final int border_color=0x7f07000c;
+        public static final int dark_grey_text=0x7f07000e;
+        public static final int dashboard_btn_text_color=0x7f070008;
         /**  Gradient Buttons 
          */
-        public static final int green_button_gradient_dark=0x7f06000d;
-        public static final int green_button_gradient_light=0x7f06000e;
-        public static final int silver_button_gradient_dark=0x7f06000f;
-        public static final int silver_button_gradient_light=0x7f060010;
+        public static final int green_button_gradient_dark=0x7f070010;
+        public static final int green_button_gradient_light=0x7f070011;
+        public static final int light_grey_text=0x7f07000d;
+        public static final int section_title=0x7f07000f;
+        public static final int silver_button_gradient_dark=0x7f070012;
+        public static final int silver_button_gradient_light=0x7f070013;
     }
     public static final class dimen {
         /**  Default height of an action bar. 
@@ -545,7 +556,7 @@ containing a value of this type.
  Default height of an action bar. 
  Default height of an action bar. 
          */
-        public static final int abs__action_bar_default_height=0x7f070001;
+        public static final int abs__action_bar_default_height=0x7f080001;
         /**  Vertical padding around action bar icons. 
  Vertical padding around action bar icons. 
  Vertical padding around action bar icons. 
@@ -554,7 +565,7 @@ containing a value of this type.
  Vertical padding around action bar icons. 
  Vertical padding around action bar icons. 
          */
-        public static final int abs__action_bar_icon_vertical_padding=0x7f070002;
+        public static final int abs__action_bar_icon_vertical_padding=0x7f080002;
         /**  Bottom margin for action bar subtitles 
  Bottom margin for action bar subtitles 
  Bottom margin for action bar subtitles 
@@ -563,7 +574,7 @@ containing a value of this type.
  Bottom margin for action bar subtitles 
  Bottom margin for action bar subtitles 
          */
-        public static final int abs__action_bar_subtitle_bottom_margin=0x7f070006;
+        public static final int abs__action_bar_subtitle_bottom_margin=0x7f080006;
         /**  Text size for action bar subtitles 
  Text size for action bar subtitles 
  Text size for action bar subtitles 
@@ -572,7 +583,7 @@ containing a value of this type.
  Text size for action bar subtitles 
  Text size for action bar subtitles 
          */
-        public static final int abs__action_bar_subtitle_text_size=0x7f070004;
+        public static final int abs__action_bar_subtitle_text_size=0x7f080004;
         /**  Top margin for action bar subtitles 
  Top margin for action bar subtitles 
  Top margin for action bar subtitles 
@@ -581,7 +592,7 @@ containing a value of this type.
  Top margin for action bar subtitles 
  Top margin for action bar subtitles 
          */
-        public static final int abs__action_bar_subtitle_top_margin=0x7f070005;
+        public static final int abs__action_bar_subtitle_top_margin=0x7f080005;
         /**  Text size for action bar titles 
  Text size for action bar titles 
  Text size for action bar titles 
@@ -590,21 +601,24 @@ containing a value of this type.
  Text size for action bar titles 
  Text size for action bar titles 
          */
-        public static final int abs__action_bar_title_text_size=0x7f070003;
+        public static final int abs__action_bar_title_text_size=0x7f080003;
         /**  Minimum width for an action button in the menu area of an action bar 
          */
-        public static final int abs__action_button_min_width=0x7f070007;
+        public static final int abs__action_button_min_width=0x7f080007;
         /**  The maximum width we would prefer dialogs to be.  0 if there is no
          maximum (let them grow as large as the screen).  Actual values are
          specified for -large and -xlarge configurations. 
          */
-        public static final int abs__config_prefDialogWidth=0x7f070000;
+        public static final int abs__config_prefDialogWidth=0x7f080000;
         /**  Minimum width for an action button in the menu area of an action bar 
  Minimum width for an action button in the menu area of an action bar 
  Minimum width for an action button in the menu area of an action bar 
  Minimum width for an action button in the menu area of an action bar 
          */
-        public static final int action_button_min_width=0x7f070008;
+        public static final int action_button_min_width=0x7f080008;
+        public static final int padding=0x7f08000a;
+        public static final int padding_large=0x7f08000b;
+        public static final int padding_small=0x7f080009;
     }
     public static final class drawable {
         public static final int abs__ab_bottom_solid_dark_holo=0x7f020000;
@@ -692,54 +706,89 @@ containing a value of this type.
         public static final int grad_btn_blue=0x7f020052;
         public static final int grad_btn_green=0x7f020053;
         public static final int grad_btn_silver=0x7f020054;
-        public static final int ic_dashboard_new_item=0x7f020055;
-        public static final int ic_dashboard_new_list=0x7f020056;
-        public static final int ic_dashboard_previous_lists=0x7f020057;
-        public static final int ic_dashboard_settings=0x7f020058;
-        public static final int ic_launcher=0x7f020059;
+        public static final int ic_action_add=0x7f020055;
+        public static final int ic_action_cancel=0x7f020056;
+        public static final int ic_action_delete=0x7f020057;
+        public static final int ic_action_done=0x7f020058;
+        public static final int ic_action_search=0x7f020059;
+        public static final int ic_action_sort=0x7f02005a;
+        public static final int ic_dashboard_items=0x7f02005b;
+        public static final int ic_dashboard_new_item=0x7f02005c;
+        public static final int ic_dashboard_new_list=0x7f02005d;
+        public static final int ic_dashboard_previous_lists=0x7f02005e;
+        public static final int ic_dashboard_settings=0x7f02005f;
+        public static final int ic_launcher=0x7f020060;
+        public static final int ic_tools_icon=0x7f020061;
     }
     public static final class id {
-        public static final int abs__action_bar=0x7f04001b;
-        public static final int abs__action_bar_container=0x7f04001a;
-        public static final int abs__action_bar_subtitle=0x7f040011;
-        public static final int abs__action_bar_title=0x7f040010;
-        public static final int abs__action_context_bar=0x7f04001c;
-        public static final int abs__action_menu_divider=0x7f04000c;
-        public static final int abs__action_menu_presenter=0x7f04000d;
-        public static final int abs__action_mode_bar=0x7f040020;
-        public static final int abs__action_mode_bar_stub=0x7f04001f;
-        public static final int abs__action_mode_close_button=0x7f040014;
-        public static final int abs__checkbox=0x7f040015;
-        public static final int abs__content=0x7f04001d;
-        public static final int abs__home=0x7f04000a;
-        public static final int abs__icon=0x7f040016;
-        public static final int abs__imageButton=0x7f040012;
-        public static final int abs__progress_circular=0x7f04000e;
-        public static final int abs__progress_horizontal=0x7f04000f;
-        public static final int abs__radio=0x7f040019;
-        public static final int abs__shortcut=0x7f040018;
-        public static final int abs__split_action_bar=0x7f04001e;
-        public static final int abs__textButton=0x7f040013;
-        public static final int abs__title=0x7f040017;
-        public static final int abs__up=0x7f04000b;
-        public static final int btn_dashboard_new_item=0x7f040023;
-        public static final int btn_dashboard_new_list=0x7f040022;
-        public static final int btn_dashboard_previous_lists=0x7f040024;
-        public static final int btn_dashboard_settings=0x7f040025;
-        public static final int container=0x7f040021;
-        public static final int disableHome=0x7f040009;
-        public static final int homeAsUp=0x7f040006;
-        public static final int listMode=0x7f040002;
-        public static final int normal=0x7f040001;
-        public static final int showCustom=0x7f040008;
-        public static final int showHome=0x7f040005;
-        public static final int showTitle=0x7f040007;
-        public static final int tabMode=0x7f040003;
-        public static final int useLogo=0x7f040004;
-        public static final int wrap_content=0x7f040000;
+        public static final int abs__action_bar=0x7f05001b;
+        public static final int abs__action_bar_container=0x7f05001a;
+        public static final int abs__action_bar_subtitle=0x7f050011;
+        public static final int abs__action_bar_title=0x7f050010;
+        public static final int abs__action_context_bar=0x7f05001c;
+        public static final int abs__action_menu_divider=0x7f05000c;
+        public static final int abs__action_menu_presenter=0x7f05000d;
+        public static final int abs__action_mode_bar=0x7f050020;
+        public static final int abs__action_mode_bar_stub=0x7f05001f;
+        public static final int abs__action_mode_close_button=0x7f050014;
+        public static final int abs__checkbox=0x7f050015;
+        public static final int abs__content=0x7f05001d;
+        public static final int abs__home=0x7f05000a;
+        public static final int abs__icon=0x7f050016;
+        public static final int abs__imageButton=0x7f050012;
+        public static final int abs__progress_circular=0x7f05000e;
+        public static final int abs__progress_horizontal=0x7f05000f;
+        public static final int abs__radio=0x7f050019;
+        public static final int abs__shortcut=0x7f050018;
+        public static final int abs__split_action_bar=0x7f05001e;
+        public static final int abs__textButton=0x7f050013;
+        public static final int abs__title=0x7f050017;
+        public static final int abs__up=0x7f05000b;
+        public static final int add=0x7f05003e;
+        public static final int btn_add_new_image=0x7f050032;
+        public static final int btn_dashboard_new_item=0x7f050024;
+        public static final int btn_dashboard_new_list=0x7f050022;
+        public static final int btn_dashboard_previous_items=0x7f050025;
+        public static final int btn_dashboard_previous_lists=0x7f050023;
+        public static final int btn_dashboard_settings=0x7f050026;
+        public static final int btn_dashboard_settings_temp=0x7f050027;
+        public static final int container=0x7f050021;
+        public static final int delete=0x7f05003a;
+        public static final int description=0x7f050037;
+        public static final int disableHome=0x7f050009;
+        public static final int homeAsUp=0x7f050006;
+        public static final int image=0x7f050034;
+        public static final int item_details_description=0x7f05002d;
+        public static final int item_details_label_description=0x7f05002c;
+        public static final int item_details_label_name=0x7f05002a;
+        public static final int item_details_label_price=0x7f05002e;
+        public static final int item_details_name=0x7f05002b;
+        public static final int item_details_price=0x7f05002f;
+        public static final int item_details_section_title=0x7f050029;
+        public static final int item_image_label=0x7f050031;
+        public static final int item_image_section_title=0x7f050030;
+        public static final int item_list_item_wrapper=0x7f050033;
+        public static final int list=0x7f050028;
+        public static final int listMode=0x7f050002;
+        public static final int name=0x7f050036;
+        public static final int normal=0x7f050001;
+        public static final int price=0x7f050035;
+        public static final int save=0x7f050040;
+        public static final int search=0x7f05003f;
+        public static final int section_header_wrapper=0x7f050038;
+        public static final int showCustom=0x7f050008;
+        public static final int showHome=0x7f050005;
+        public static final int showTitle=0x7f050007;
+        public static final int sort=0x7f05003b;
+        public static final int sort_by_name=0x7f05003c;
+        public static final int sort_by_price=0x7f05003d;
+        public static final int tabMode=0x7f050003;
+        public static final int text=0x7f050039;
+        public static final int useLogo=0x7f050004;
+        public static final int wrap_content=0x7f050000;
     }
     public static final class integer {
-        public static final int abs__max_action_buttons=0x7f080000;
+        public static final int abs__max_action_buttons=0x7f090000;
     }
     public static final class layout {
         public static final int abs__action_bar_home=0x7f030000;
@@ -760,135 +809,214 @@ containing a value of this type.
         public static final int abs__screen_simple_overlay_action_mode=0x7f03000f;
         public static final int activity_with_single_fragment=0x7f030010;
         public static final int fragment_dashboard=0x7f030011;
-        public static final int sherlock_spinner_item=0x7f030012;
+        public static final int fragment_item_list=0x7f030012;
+        public static final int fragment_new_item=0x7f030013;
+        public static final int item_list_item=0x7f030014;
+        public static final int section_header=0x7f030015;
+        public static final int sherlock_spinner_item=0x7f030016;
+    }
+    public static final class menu {
+        public static final int item_list_contextual_menu=0x7f0c0000;
+        public static final int item_list_menu=0x7f0c0001;
+        public static final int new_item_menu=0x7f0c0002;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
-        public static final int abs__action_bar_home_description=0x7f090000;
+        public static final int abs__action_bar_home_description=0x7f0a0000;
         /**  Content description for the action bar "up" affordance. [CHAR LIMIT=NONE] 
          */
-        public static final int abs__action_bar_up_description=0x7f090001;
+        public static final int abs__action_bar_up_description=0x7f0a0001;
         /**  Content description for the action menu overflow button. [CHAR LIMIT=NONE] 
          */
-        public static final int abs__action_menu_overflow_description=0x7f090002;
-        public static final int app_name=0x7f090003;
-        public static final int btn_dashboard_new_item=0x7f090006;
+        public static final int abs__action_menu_overflow_description=0x7f0a0002;
+        public static final int add=0x7f0a000a;
+        public static final int add_item=0x7f0a0020;
+        /**  App constants 
+         */
+        public static final int app_name=0x7f0a0003;
+        public static final int btn_add_new_image=0x7f0a001a;
+        public static final int btn_dashboard_new_item=0x7f0a000f;
         /**  Dashboard 
          */
-        public static final int btn_dashboard_new_list=0x7f090005;
-        public static final int btn_dashboard_previous_lists=0x7f090007;
-        public static final int btn_dashboard_settings=0x7f090008;
+        public static final int btn_dashboard_new_list=0x7f0a000e;
+        public static final int btn_dashboard_previous_items=0x7f0a0012;
+        public static final int btn_dashboard_previous_lists=0x7f0a0010;
+        public static final int btn_dashboard_settings=0x7f0a0011;
+        public static final int changed_data=0x7f0a001d;
+        public static final int changed_data_message=0x7f0a001e;
         /**  Various activity titles 
          */
-        public static final int dashboard_title=0x7f090004;
+        public static final int dashboard_title=0x7f0a000d;
+        public static final int delete=0x7f0a000b;
+        public static final int delete_item=0x7f0a001b;
+        public static final int item_delete_message=0x7f0a001c;
+        public static final int item_details_description=0x7f0a0016;
+        public static final int item_details_label_price=0x7f0a0017;
+        public static final int item_details_name=0x7f0a0015;
+        public static final int item_details_section_title=0x7f0a0014;
+        public static final int item_image_label=0x7f0a0019;
+        public static final int item_image_section_title=0x7f0a0018;
+        /**  Item list 
+         */
+        public static final int item_list_title=0x7f0a001f;
+        /**  New Item 
+         */
+        public static final int new_item_title=0x7f0a0013;
+        public static final int permission_database_access=0x7f0a0004;
+        public static final int permission_database_access_description=0x7f0a0005;
+        public static final int permission_receive_broadcast=0x7f0a0006;
+        public static final int permission_receive_broadcast_description=0x7f0a0007;
+        public static final int save=0x7f0a0009;
+        /**  Common 
+         */
+        public static final int search=0x7f0a0008;
+        public static final int search_items=0x7f0a0023;
+        public static final int search_items_hint=0x7f0a0024;
+        public static final int sort_by=0x7f0a000c;
+        public static final int sort_by_name=0x7f0a0021;
+        public static final int sort_by_price=0x7f0a0022;
     }
     public static final class style {
-        public static final int DashboardButton=0x7f0a0043;
-        public static final int Sherlock___Theme=0x7f0a0038;
-        public static final int Sherlock___Theme_DarkActionBar=0x7f0a003a;
-        public static final int Sherlock___Theme_Light=0x7f0a0039;
-        public static final int Sherlock___Widget_ActionBar=0x7f0a0001;
-        public static final int Sherlock___Widget_ActionMode=0x7f0a0016;
-        public static final int Sherlock___Widget_Holo_ListView=0x7f0a001f;
-        public static final int Sherlock___Widget_Holo_Spinner=0x7f0a001c;
-        public static final int TextAppearance_Sherlock_Light_Widget_PopupMenu_Large=0x7f0a0034;
-        public static final int TextAppearance_Sherlock_Light_Widget_PopupMenu_Small=0x7f0a0036;
-        public static final int TextAppearance_Sherlock_Widget_ActionBar_Menu=0x7f0a0029;
-        public static final int TextAppearance_Sherlock_Widget_ActionBar_Subtitle=0x7f0a002c;
-        public static final int TextAppearance_Sherlock_Widget_ActionBar_Subtitle_Inverse=0x7f0a002d;
-        public static final int TextAppearance_Sherlock_Widget_ActionBar_Title=0x7f0a002a;
-        public static final int TextAppearance_Sherlock_Widget_ActionBar_Title_Inverse=0x7f0a002b;
-        public static final int TextAppearance_Sherlock_Widget_ActionMode_Subtitle=0x7f0a0030;
-        public static final int TextAppearance_Sherlock_Widget_ActionMode_Subtitle_Inverse=0x7f0a0031;
-        public static final int TextAppearance_Sherlock_Widget_ActionMode_Title=0x7f0a002e;
-        public static final int TextAppearance_Sherlock_Widget_ActionMode_Title_Inverse=0x7f0a002f;
-        public static final int TextAppearance_Sherlock_Widget_PopupMenu=0x7f0a0032;
-        public static final int TextAppearance_Sherlock_Widget_PopupMenu_Large=0x7f0a0033;
-        public static final int TextAppearance_Sherlock_Widget_PopupMenu_Small=0x7f0a0035;
-        public static final int TextAppearance_Sherlock_Widget_TextView_SpinnerItem=0x7f0a0037;
-        public static final int Theme_Sherlock=0x7f0a003b;
-        public static final int Theme_Sherlock_ForceOverflow=0x7f0a0040;
-        public static final int Theme_Sherlock_Light=0x7f0a003c;
-        public static final int Theme_Sherlock_Light_DarkActionBar=0x7f0a003d;
-        public static final int Theme_Sherlock_Light_DarkActionBar_ForceOverflow=0x7f0a0042;
-        public static final int Theme_Sherlock_Light_ForceOverflow=0x7f0a0041;
-        public static final int Theme_Sherlock_Light_NoActionBar=0x7f0a003f;
-        public static final int Theme_Sherlock_NoActionBar=0x7f0a003e;
-        public static final int Theme_WorkTracker=0x7f0a0048;
-        public static final int Widget=0x7f0a0000;
-        public static final int Widget_Sherlock_ActionBar=0x7f0a0002;
-        public static final int Widget_Sherlock_ActionBar_Solid=0x7f0a0003;
-        public static final int Widget_Sherlock_ActionBar_TabBar=0x7f0a000a;
-        public static final int Widget_Sherlock_ActionBar_TabText=0x7f0a000d;
-        public static final int Widget_Sherlock_ActionBar_TabView=0x7f0a0007;
-        public static final int Widget_Sherlock_ActionButton=0x7f0a0010;
-        public static final int Widget_Sherlock_ActionButton_CloseMode=0x7f0a0012;
-        public static final int Widget_Sherlock_ActionButton_Overflow=0x7f0a0014;
-        public static final int Widget_Sherlock_ActionMode=0x7f0a0017;
-        public static final int Widget_Sherlock_Light_ActionBar=0x7f0a0004;
-        public static final int Widget_Sherlock_Light_ActionBar_Solid=0x7f0a0005;
-        public static final int Widget_Sherlock_Light_ActionBar_Solid_Inverse=0x7f0a0006;
-        public static final int Widget_Sherlock_Light_ActionBar_TabBar=0x7f0a000b;
-        public static final int Widget_Sherlock_Light_ActionBar_TabBar_Inverse=0x7f0a000c;
-        public static final int Widget_Sherlock_Light_ActionBar_TabText=0x7f0a000e;
-        public static final int Widget_Sherlock_Light_ActionBar_TabText_Inverse=0x7f0a000f;
-        public static final int Widget_Sherlock_Light_ActionBar_TabView=0x7f0a0008;
-        public static final int Widget_Sherlock_Light_ActionBar_TabView_Inverse=0x7f0a0009;
-        public static final int Widget_Sherlock_Light_ActionButton=0x7f0a0011;
-        public static final int Widget_Sherlock_Light_ActionButton_CloseMode=0x7f0a0013;
-        public static final int Widget_Sherlock_Light_ActionButton_Overflow=0x7f0a0015;
-        public static final int Widget_Sherlock_Light_ActionMode=0x7f0a0018;
-        public static final int Widget_Sherlock_Light_ActionMode_Inverse=0x7f0a0019;
-        public static final int Widget_Sherlock_Light_ListView_DropDown=0x7f0a0021;
-        public static final int Widget_Sherlock_Light_PopupMenu=0x7f0a001b;
-        public static final int Widget_Sherlock_Light_PopupWindow_ActionMode=0x7f0a0023;
-        public static final int Widget_Sherlock_Light_ProgressBar=0x7f0a0025;
-        public static final int Widget_Sherlock_Light_ProgressBar_Horizontal=0x7f0a0027;
-        public static final int Widget_Sherlock_Light_Spinner_DropDown_ActionBar=0x7f0a001e;
-        public static final int Widget_Sherlock_ListView_DropDown=0x7f0a0020;
-        public static final int Widget_Sherlock_PopupMenu=0x7f0a001a;
-        public static final int Widget_Sherlock_PopupWindow_ActionMode=0x7f0a0022;
-        public static final int Widget_Sherlock_ProgressBar=0x7f0a0024;
-        public static final int Widget_Sherlock_ProgressBar_Horizontal=0x7f0a0026;
-        public static final int Widget_Sherlock_Spinner_DropDown_ActionBar=0x7f0a001d;
-        public static final int Widget_Sherlock_TextView_SpinnerItem=0x7f0a0028;
+        public static final int DashboardButton=0x7f0b0043;
+        /**  Text 
+         */
+        public static final int Label_Text=0x7f0b0048;
+        public static final int List_Text=0x7f0b0049;
+        public static final int Sherlock___Theme=0x7f0b0038;
+        public static final int Sherlock___Theme_DarkActionBar=0x7f0b003a;
+        public static final int Sherlock___Theme_Light=0x7f0b0039;
+        public static final int Sherlock___Widget_ActionBar=0x7f0b0001;
+        public static final int Sherlock___Widget_ActionMode=0x7f0b0016;
+        public static final int Sherlock___Widget_Holo_ListView=0x7f0b001f;
+        public static final int Sherlock___Widget_Holo_Spinner=0x7f0b001c;
+        public static final int TextAppearance_Sherlock_Light_Widget_PopupMenu_Large=0x7f0b0034;
+        public static final int TextAppearance_Sherlock_Light_Widget_PopupMenu_Small=0x7f0b0036;
+        public static final int TextAppearance_Sherlock_Widget_ActionBar_Menu=0x7f0b0029;
+        public static final int TextAppearance_Sherlock_Widget_ActionBar_Subtitle=0x7f0b002c;
+        public static final int TextAppearance_Sherlock_Widget_ActionBar_Subtitle_Inverse=0x7f0b002d;
+        public static final int TextAppearance_Sherlock_Widget_ActionBar_Title=0x7f0b002a;
+        public static final int TextAppearance_Sherlock_Widget_ActionBar_Title_Inverse=0x7f0b002b;
+        public static final int TextAppearance_Sherlock_Widget_ActionMode_Subtitle=0x7f0b0030;
+        public static final int TextAppearance_Sherlock_Widget_ActionMode_Subtitle_Inverse=0x7f0b0031;
+        public static final int TextAppearance_Sherlock_Widget_ActionMode_Title=0x7f0b002e;
+        public static final int TextAppearance_Sherlock_Widget_ActionMode_Title_Inverse=0x7f0b002f;
+        public static final int TextAppearance_Sherlock_Widget_PopupMenu=0x7f0b0032;
+        public static final int TextAppearance_Sherlock_Widget_PopupMenu_Large=0x7f0b0033;
+        public static final int TextAppearance_Sherlock_Widget_PopupMenu_Small=0x7f0b0035;
+        public static final int TextAppearance_Sherlock_Widget_TextView_SpinnerItem=0x7f0b0037;
+        public static final int Theme_Sherlock=0x7f0b003b;
+        public static final int Theme_Sherlock_ForceOverflow=0x7f0b0040;
+        public static final int Theme_Sherlock_Light=0x7f0b003c;
+        public static final int Theme_Sherlock_Light_DarkActionBar=0x7f0b003d;
+        public static final int Theme_Sherlock_Light_DarkActionBar_ForceOverflow=0x7f0b0042;
+        public static final int Theme_Sherlock_Light_ForceOverflow=0x7f0b0041;
+        public static final int Theme_Sherlock_Light_NoActionBar=0x7f0b003f;
+        public static final int Theme_Sherlock_NoActionBar=0x7f0b003e;
+        public static final int Theme_WorkTracker=0x7f0b004a;
+        public static final int Widget=0x7f0b0000;
+        public static final int Widget_Sherlock_ActionBar=0x7f0b0002;
+        public static final int Widget_Sherlock_ActionBar_Solid=0x7f0b0003;
+        public static final int Widget_Sherlock_ActionBar_TabBar=0x7f0b000a;
+        public static final int Widget_Sherlock_ActionBar_TabText=0x7f0b000d;
+        public static final int Widget_Sherlock_ActionBar_TabView=0x7f0b0007;
+        public static final int Widget_Sherlock_ActionButton=0x7f0b0010;
+        public static final int Widget_Sherlock_ActionButton_CloseMode=0x7f0b0012;
+        public static final int Widget_Sherlock_ActionButton_Overflow=0x7f0b0014;
+        public static final int Widget_Sherlock_ActionMode=0x7f0b0017;
+        public static final int Widget_Sherlock_Light_ActionBar=0x7f0b0004;
+        public static final int Widget_Sherlock_Light_ActionBar_Solid=0x7f0b0005;
+        public static final int Widget_Sherlock_Light_ActionBar_Solid_Inverse=0x7f0b0006;
+        public static final int Widget_Sherlock_Light_ActionBar_TabBar=0x7f0b000b;
+        public static final int Widget_Sherlock_Light_ActionBar_TabBar_Inverse=0x7f0b000c;
+        public static final int Widget_Sherlock_Light_ActionBar_TabText=0x7f0b000e;
+        public static final int Widget_Sherlock_Light_ActionBar_TabText_Inverse=0x7f0b000f;
+        public static final int Widget_Sherlock_Light_ActionBar_TabView=0x7f0b0008;
+        public static final int Widget_Sherlock_Light_ActionBar_TabView_Inverse=0x7f0b0009;
+        public static final int Widget_Sherlock_Light_ActionButton=0x7f0b0011;
+        public static final int Widget_Sherlock_Light_ActionButton_CloseMode=0x7f0b0013;
+        public static final int Widget_Sherlock_Light_ActionButton_Overflow=0x7f0b0015;
+        public static final int Widget_Sherlock_Light_ActionMode=0x7f0b0018;
+        public static final int Widget_Sherlock_Light_ActionMode_Inverse=0x7f0b0019;
+        public static final int Widget_Sherlock_Light_ListView_DropDown=0x7f0b0021;
+        public static final int Widget_Sherlock_Light_PopupMenu=0x7f0b001b;
+        public static final int Widget_Sherlock_Light_PopupWindow_ActionMode=0x7f0b0023;
+        public static final int Widget_Sherlock_Light_ProgressBar=0x7f0b0025;
+        public static final int Widget_Sherlock_Light_ProgressBar_Horizontal=0x7f0b0027;
+        public static final int Widget_Sherlock_Light_Spinner_DropDown_ActionBar=0x7f0b001e;
+        public static final int Widget_Sherlock_ListView_DropDown=0x7f0b0020;
+        public static final int Widget_Sherlock_PopupMenu=0x7f0b001a;
+        public static final int Widget_Sherlock_PopupWindow_ActionMode=0x7f0b0022;
+        public static final int Widget_Sherlock_ProgressBar=0x7f0b0024;
+        public static final int Widget_Sherlock_ProgressBar_Horizontal=0x7f0b0026;
+        public static final int Widget_Sherlock_Spinner_DropDown_ActionBar=0x7f0b001d;
+        public static final int Widget_Sherlock_TextView_SpinnerItem=0x7f0b0028;
         /**  Action Bar 
          */
-        public static final int action_bar_title=0x7f0a0044;
+        public static final int action_bar_title=0x7f0b0044;
         /**  Buttons 
          */
-        public static final int base_button=0x7f0a0045;
-        public static final int blue_button=0x7f0a0047;
-        public static final int green_button=0x7f0a0046;
+        public static final int base_button=0x7f0b0045;
+        public static final int blue_button=0x7f0b0047;
+        public static final int green_button=0x7f0b0046;
+    }
+    public static final class xml {
+        public static final int searchable_items=0x7f040000;
     }
     public static final class styleable {
+        /** Attributes that can be used with a SectionHeading.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SectionHeading_text com.DGSD.WorkTracker:text}</code></td><td></td></tr>
+           </table>
+           @see #SectionHeading_text
+         */
+        public static final int[] SectionHeading = {
+            0x7f010047
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.DGSD.WorkTracker.R.attr#text}
+          attribute's value can be found in the {@link #SectionHeading} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:text
+        */
+        public static final int SectionHeading_text = 0;
         /**  Attributes used to style the Action Bar. 
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SherlockActionBar_background com.DGSD.InvoiceTracker:background}</code></td><td> Specifies a background drawable for the action bar.</td></tr>
-           <tr><td><code>{@link #SherlockActionBar_backgroundSplit com.DGSD.InvoiceTracker:backgroundSplit}</code></td><td> Specifies a background drawable for the bottom component of a split action bar.</td></tr>
-           <tr><td><code>{@link #SherlockActionBar_backgroundStacked com.DGSD.InvoiceTracker:backgroundStacked}</code></td><td> Specifies a background drawable for a second stacked row of the action bar.</td></tr>
-           <tr><td><code>{@link #SherlockActionBar_customNavigationLayout com.DGSD.InvoiceTracker:customNavigationLayout}</code></td><td> Specifies a layout for custom navigation.</td></tr>
-           <tr><td><code>{@link #SherlockActionBar_displayOptions com.DGSD.InvoiceTracker:displayOptions}</code></td><td> Options affecting how the action bar is displayed.</td></tr>
-           <tr><td><code>{@link #SherlockActionBar_divider com.DGSD.InvoiceTracker:divider}</code></td><td> Specifies the drawable used for item dividers.</td></tr>
-           <tr><td><code>{@link #SherlockActionBar_height com.DGSD.InvoiceTracker:height}</code></td><td> Specifies a fixed height.</td></tr>
-           <tr><td><code>{@link #SherlockActionBar_homeLayout com.DGSD.InvoiceTracker:homeLayout}</code></td><td> Specifies a layout to use for the "home" section of the action bar.</td></tr>
-           <tr><td><code>{@link #SherlockActionBar_icon com.DGSD.InvoiceTracker:icon}</code></td><td> Specifies the drawable used for the application icon.</td></tr>
-           <tr><td><code>{@link #SherlockActionBar_indeterminateProgressStyle com.DGSD.InvoiceTracker:indeterminateProgressStyle}</code></td><td> Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
-           <tr><td><code>{@link #SherlockActionBar_itemPadding com.DGSD.InvoiceTracker:itemPadding}</code></td><td> Specifies padding that should be applied to the left and right sides of
+           <tr><td><code>{@link #SherlockActionBar_background com.DGSD.WorkTracker:background}</code></td><td> Specifies a background drawable for the action bar.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_backgroundSplit com.DGSD.WorkTracker:backgroundSplit}</code></td><td> Specifies a background drawable for the bottom component of a split action bar.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_backgroundStacked com.DGSD.WorkTracker:backgroundStacked}</code></td><td> Specifies a background drawable for a second stacked row of the action bar.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_customNavigationLayout com.DGSD.WorkTracker:customNavigationLayout}</code></td><td> Specifies a layout for custom navigation.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_displayOptions com.DGSD.WorkTracker:displayOptions}</code></td><td> Options affecting how the action bar is displayed.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_divider com.DGSD.WorkTracker:divider}</code></td><td> Specifies the drawable used for item dividers.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_height com.DGSD.WorkTracker:height}</code></td><td> Specifies a fixed height.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_homeLayout com.DGSD.WorkTracker:homeLayout}</code></td><td> Specifies a layout to use for the "home" section of the action bar.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_icon com.DGSD.WorkTracker:icon}</code></td><td> Specifies the drawable used for the application icon.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_indeterminateProgressStyle com.DGSD.WorkTracker:indeterminateProgressStyle}</code></td><td> Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_itemPadding com.DGSD.WorkTracker:itemPadding}</code></td><td> Specifies padding that should be applied to the left and right sides of
              system-provided items in the bar.</td></tr>
-           <tr><td><code>{@link #SherlockActionBar_logo com.DGSD.InvoiceTracker:logo}</code></td><td> Specifies the drawable used for the application logo.</td></tr>
-           <tr><td><code>{@link #SherlockActionBar_navigationMode com.DGSD.InvoiceTracker:navigationMode}</code></td><td> The type of navigation to use.</td></tr>
-           <tr><td><code>{@link #SherlockActionBar_progressBarPadding com.DGSD.InvoiceTracker:progressBarPadding}</code></td><td> Specifies the horizontal padding on either end for an embedded progress bar.</td></tr>
-           <tr><td><code>{@link #SherlockActionBar_progressBarStyle com.DGSD.InvoiceTracker:progressBarStyle}</code></td><td> Specifies a style resource to use for an embedded progress bar.</td></tr>
-           <tr><td><code>{@link #SherlockActionBar_subtitle com.DGSD.InvoiceTracker:subtitle}</code></td><td> Specifies subtitle text used for navigationMode="normal" </td></tr>
-           <tr><td><code>{@link #SherlockActionBar_subtitleTextStyle com.DGSD.InvoiceTracker:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
-           <tr><td><code>{@link #SherlockActionBar_title com.DGSD.InvoiceTracker:title}</code></td><td> Specifies title text used for navigationMode="normal" </td></tr>
-           <tr><td><code>{@link #SherlockActionBar_titleTextStyle com.DGSD.InvoiceTracker:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_logo com.DGSD.WorkTracker:logo}</code></td><td> Specifies the drawable used for the application logo.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_navigationMode com.DGSD.WorkTracker:navigationMode}</code></td><td> The type of navigation to use.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_progressBarPadding com.DGSD.WorkTracker:progressBarPadding}</code></td><td> Specifies the horizontal padding on either end for an embedded progress bar.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_progressBarStyle com.DGSD.WorkTracker:progressBarStyle}</code></td><td> Specifies a style resource to use for an embedded progress bar.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_subtitle com.DGSD.WorkTracker:subtitle}</code></td><td> Specifies subtitle text used for navigationMode="normal" </td></tr>
+           <tr><td><code>{@link #SherlockActionBar_subtitleTextStyle com.DGSD.WorkTracker:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_title com.DGSD.WorkTracker:title}</code></td><td> Specifies title text used for navigationMode="normal" </td></tr>
+           <tr><td><code>{@link #SherlockActionBar_titleTextStyle com.DGSD.WorkTracker:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
            </table>
            @see #SherlockActionBar_background
            @see #SherlockActionBar_backgroundSplit
@@ -1203,7 +1331,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SherlockActionMenuItemView_android_minWidth com.DGSD.InvoiceTracker:android_minWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionMenuItemView_android_minWidth com.DGSD.WorkTracker:android_minWidth}</code></td><td></td></tr>
            </table>
            @see #SherlockActionMenuItemView_android_minWidth
          */
@@ -1211,7 +1339,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x0101013f
         };
         /**
-          <p>This symbol is the offset where the {@link com.DGSD.InvoiceTracker.R.attr#android_minWidth}
+          <p>This symbol is the offset where the {@link com.DGSD.WorkTracker.R.attr#android_minWidth}
           attribute's value can be found in the {@link #SherlockActionMenuItemView} array.
           @attr name android:android_minWidth
         */
@@ -1222,11 +1350,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SherlockActionMode_background com.DGSD.InvoiceTracker:background}</code></td><td> Specifies a background for the action mode bar.</td></tr>
-           <tr><td><code>{@link #SherlockActionMode_backgroundSplit com.DGSD.InvoiceTracker:backgroundSplit}</code></td><td> Specifies a background for the split action mode bar.</td></tr>
-           <tr><td><code>{@link #SherlockActionMode_height com.DGSD.InvoiceTracker:height}</code></td><td> Specifies a fixed height for the action mode bar.</td></tr>
-           <tr><td><code>{@link #SherlockActionMode_subtitleTextStyle com.DGSD.InvoiceTracker:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
-           <tr><td><code>{@link #SherlockActionMode_titleTextStyle com.DGSD.InvoiceTracker:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
+           <tr><td><code>{@link #SherlockActionMode_background com.DGSD.WorkTracker:background}</code></td><td> Specifies a background for the action mode bar.</td></tr>
+           <tr><td><code>{@link #SherlockActionMode_backgroundSplit com.DGSD.WorkTracker:backgroundSplit}</code></td><td> Specifies a background for the split action mode bar.</td></tr>
+           <tr><td><code>{@link #SherlockActionMode_height com.DGSD.WorkTracker:height}</code></td><td> Specifies a fixed height for the action mode bar.</td></tr>
+           <tr><td><code>{@link #SherlockActionMode_subtitleTextStyle com.DGSD.WorkTracker:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
+           <tr><td><code>{@link #SherlockActionMode_titleTextStyle com.DGSD.WorkTracker:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
            </table>
            @see #SherlockActionMode_background
            @see #SherlockActionMode_backgroundSplit
@@ -1314,14 +1442,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SherlockMenuView_headerBackground com.DGSD.InvoiceTracker:headerBackground}</code></td><td> Default background for the menu header.</td></tr>
-           <tr><td><code>{@link #SherlockMenuView_horizontalDivider com.DGSD.InvoiceTracker:horizontalDivider}</code></td><td> Default horizontal divider between rows of menu items.</td></tr>
-           <tr><td><code>{@link #SherlockMenuView_itemBackground com.DGSD.InvoiceTracker:itemBackground}</code></td><td> Default background for each menu item.</td></tr>
-           <tr><td><code>{@link #SherlockMenuView_itemIconDisabledAlpha com.DGSD.InvoiceTracker:itemIconDisabledAlpha}</code></td><td> Default disabled icon alpha for each menu item that shows an icon.</td></tr>
-           <tr><td><code>{@link #SherlockMenuView_itemTextAppearance com.DGSD.InvoiceTracker:itemTextAppearance}</code></td><td> Default appearance of menu item text.</td></tr>
-           <tr><td><code>{@link #SherlockMenuView_preserveIconSpacing com.DGSD.InvoiceTracker:preserveIconSpacing}</code></td><td> Whether space should be reserved in layout when an icon is missing.</td></tr>
-           <tr><td><code>{@link #SherlockMenuView_verticalDivider com.DGSD.InvoiceTracker:verticalDivider}</code></td><td> Default vertical divider between menu items.</td></tr>
-           <tr><td><code>{@link #SherlockMenuView_windowAnimationStyle com.DGSD.InvoiceTracker:windowAnimationStyle}</code></td><td> Default animations for the menu.</td></tr>
+           <tr><td><code>{@link #SherlockMenuView_headerBackground com.DGSD.WorkTracker:headerBackground}</code></td><td> Default background for the menu header.</td></tr>
+           <tr><td><code>{@link #SherlockMenuView_horizontalDivider com.DGSD.WorkTracker:horizontalDivider}</code></td><td> Default horizontal divider between rows of menu items.</td></tr>
+           <tr><td><code>{@link #SherlockMenuView_itemBackground com.DGSD.WorkTracker:itemBackground}</code></td><td> Default background for each menu item.</td></tr>
+           <tr><td><code>{@link #SherlockMenuView_itemIconDisabledAlpha com.DGSD.WorkTracker:itemIconDisabledAlpha}</code></td><td> Default disabled icon alpha for each menu item that shows an icon.</td></tr>
+           <tr><td><code>{@link #SherlockMenuView_itemTextAppearance com.DGSD.WorkTracker:itemTextAppearance}</code></td><td> Default appearance of menu item text.</td></tr>
+           <tr><td><code>{@link #SherlockMenuView_preserveIconSpacing com.DGSD.WorkTracker:preserveIconSpacing}</code></td><td> Whether space should be reserved in layout when an icon is missing.</td></tr>
+           <tr><td><code>{@link #SherlockMenuView_verticalDivider com.DGSD.WorkTracker:verticalDivider}</code></td><td> Default vertical divider between menu items.</td></tr>
+           <tr><td><code>{@link #SherlockMenuView_windowAnimationStyle com.DGSD.WorkTracker:windowAnimationStyle}</code></td><td> Default animations for the menu.</td></tr>
            </table>
            @see #SherlockMenuView_headerBackground
            @see #SherlockMenuView_horizontalDivider
@@ -1450,54 +1578,54 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SherlockTheme_absForceOverflow com.DGSD.InvoiceTracker:absForceOverflow}</code></td><td> Specified if we are forcing an action item overflow menu.</td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionBarDivider com.DGSD.InvoiceTracker:actionBarDivider}</code></td><td> Custom divider drawable to use for elements in the action bar.</td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionBarItemBackground com.DGSD.InvoiceTracker:actionBarItemBackground}</code></td><td> Custom item state list drawable background for action bar items.</td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionBarSize com.DGSD.InvoiceTracker:actionBarSize}</code></td><td> Size of the Action Bar, including the contextual
+           <tr><td><code>{@link #SherlockTheme_absForceOverflow com.DGSD.WorkTracker:absForceOverflow}</code></td><td> Specified if we are forcing an action item overflow menu.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarDivider com.DGSD.WorkTracker:actionBarDivider}</code></td><td> Custom divider drawable to use for elements in the action bar.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarItemBackground com.DGSD.WorkTracker:actionBarItemBackground}</code></td><td> Custom item state list drawable background for action bar items.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarSize com.DGSD.WorkTracker:actionBarSize}</code></td><td> Size of the Action Bar, including the contextual
              bar used to present Action Modes.</td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionBarSplitStyle com.DGSD.InvoiceTracker:actionBarSplitStyle}</code></td><td> Reference to a style for the split Action Bar.</td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionBarStyle com.DGSD.InvoiceTracker:actionBarStyle}</code></td><td> Reference to a style for the Action Bar </td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionBarTabBarStyle com.DGSD.InvoiceTracker:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionBarTabStyle com.DGSD.InvoiceTracker:actionBarTabStyle}</code></td><td> Default style for tabs within an action bar </td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionBarTabTextStyle com.DGSD.InvoiceTracker:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionBarWidgetTheme com.DGSD.InvoiceTracker:actionBarWidgetTheme}</code></td><td> Reference to a theme that should be used to inflate widgets
+           <tr><td><code>{@link #SherlockTheme_actionBarSplitStyle com.DGSD.WorkTracker:actionBarSplitStyle}</code></td><td> Reference to a style for the split Action Bar.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarStyle com.DGSD.WorkTracker:actionBarStyle}</code></td><td> Reference to a style for the Action Bar </td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarTabBarStyle com.DGSD.WorkTracker:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarTabStyle com.DGSD.WorkTracker:actionBarTabStyle}</code></td><td> Default style for tabs within an action bar </td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarTabTextStyle com.DGSD.WorkTracker:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarWidgetTheme com.DGSD.WorkTracker:actionBarWidgetTheme}</code></td><td> Reference to a theme that should be used to inflate widgets
              and layouts destined for the action bar.</td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionButtonStyle com.DGSD.InvoiceTracker:actionButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionDropDownStyle com.DGSD.InvoiceTracker:actionDropDownStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionMenuTextAppearance com.DGSD.InvoiceTracker:actionMenuTextAppearance}</code></td><td> TextAppearance style that will be applied to text that
+           <tr><td><code>{@link #SherlockTheme_actionButtonStyle com.DGSD.WorkTracker:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionDropDownStyle com.DGSD.WorkTracker:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionMenuTextAppearance com.DGSD.WorkTracker:actionMenuTextAppearance}</code></td><td> TextAppearance style that will be applied to text that
              appears within action menu items.</td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionMenuTextColor com.DGSD.InvoiceTracker:actionMenuTextColor}</code></td><td> Color for text that appears within action menu items.</td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionModeBackground com.DGSD.InvoiceTracker:actionModeBackground}</code></td><td> Background drawable to use for action mode UI </td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionModeCloseButtonStyle com.DGSD.InvoiceTracker:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionModeCloseDrawable com.DGSD.InvoiceTracker:actionModeCloseDrawable}</code></td><td> Drawable to use for the close action mode button </td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionModePopupWindowStyle com.DGSD.InvoiceTracker:actionModePopupWindowStyle}</code></td><td> PopupWindow style to use for action modes when showing as a window overlay.</td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionModeSplitBackground com.DGSD.InvoiceTracker:actionModeSplitBackground}</code></td><td> Background drawable to use for action mode UI in the lower split bar </td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionModeStyle com.DGSD.InvoiceTracker:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionOverflowButtonStyle com.DGSD.InvoiceTracker:actionOverflowButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_actionSpinnerItemStyle com.DGSD.InvoiceTracker:actionSpinnerItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_buttonStyleSmall com.DGSD.InvoiceTracker:buttonStyleSmall}</code></td><td> Small Button style.</td></tr>
-           <tr><td><code>{@link #SherlockTheme_dividerVertical com.DGSD.InvoiceTracker:dividerVertical}</code></td><td> Drawable to use for generic vertical dividers.</td></tr>
-           <tr><td><code>{@link #SherlockTheme_dropDownListViewStyle com.DGSD.InvoiceTracker:dropDownListViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_dropdownListPreferredItemHeight com.DGSD.InvoiceTracker:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_homeAsUpIndicator com.DGSD.InvoiceTracker:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_listPreferredItemHeightSmall com.DGSD.InvoiceTracker:listPreferredItemHeightSmall}</code></td><td> A smaller, sleeker list item height.</td></tr>
-           <tr><td><code>{@link #SherlockTheme_listPreferredItemPaddingLeft com.DGSD.InvoiceTracker:listPreferredItemPaddingLeft}</code></td><td> The preferred padding along the left edge of list items.</td></tr>
-           <tr><td><code>{@link #SherlockTheme_listPreferredItemPaddingRight com.DGSD.InvoiceTracker:listPreferredItemPaddingRight}</code></td><td> The preferred padding along the right edge of list items.</td></tr>
-           <tr><td><code>{@link #SherlockTheme_popupMenuStyle com.DGSD.InvoiceTracker:popupMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_spinnerItemStyle com.DGSD.InvoiceTracker:spinnerItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_textAppearanceLargePopupMenu com.DGSD.InvoiceTracker:textAppearanceLargePopupMenu}</code></td><td> Text color, typeface, size, and style for the text inside of a popup menu.</td></tr>
-           <tr><td><code>{@link #SherlockTheme_textAppearanceListItemSmall com.DGSD.InvoiceTracker:textAppearanceListItemSmall}</code></td><td> The preferred TextAppearance for the primary text of small list items.</td></tr>
-           <tr><td><code>{@link #SherlockTheme_textAppearanceSmall com.DGSD.InvoiceTracker:textAppearanceSmall}</code></td><td> Text color, typeface, size, and style for "small" text.</td></tr>
-           <tr><td><code>{@link #SherlockTheme_textAppearanceSmallPopupMenu com.DGSD.InvoiceTracker:textAppearanceSmallPopupMenu}</code></td><td> Text color, typeface, size, and style for small text inside of a popup menu.</td></tr>
-           <tr><td><code>{@link #SherlockTheme_textColorPrimary com.DGSD.InvoiceTracker:textColorPrimary}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_textColorPrimaryInverse com.DGSD.InvoiceTracker:textColorPrimaryInverse}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_windowActionBar com.DGSD.InvoiceTracker:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_windowActionBarOverlay com.DGSD.InvoiceTracker:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_windowActionModeOverlay com.DGSD.InvoiceTracker:windowActionModeOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_windowContentOverlay com.DGSD.InvoiceTracker:windowContentOverlay}</code></td><td> This Drawable is overlaid over the foreground of the Window's content area, usually
+           <tr><td><code>{@link #SherlockTheme_actionMenuTextColor com.DGSD.WorkTracker:actionMenuTextColor}</code></td><td> Color for text that appears within action menu items.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionModeBackground com.DGSD.WorkTracker:actionModeBackground}</code></td><td> Background drawable to use for action mode UI </td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionModeCloseButtonStyle com.DGSD.WorkTracker:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionModeCloseDrawable com.DGSD.WorkTracker:actionModeCloseDrawable}</code></td><td> Drawable to use for the close action mode button </td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionModePopupWindowStyle com.DGSD.WorkTracker:actionModePopupWindowStyle}</code></td><td> PopupWindow style to use for action modes when showing as a window overlay.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionModeSplitBackground com.DGSD.WorkTracker:actionModeSplitBackground}</code></td><td> Background drawable to use for action mode UI in the lower split bar </td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionModeStyle com.DGSD.WorkTracker:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionOverflowButtonStyle com.DGSD.WorkTracker:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionSpinnerItemStyle com.DGSD.WorkTracker:actionSpinnerItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_buttonStyleSmall com.DGSD.WorkTracker:buttonStyleSmall}</code></td><td> Small Button style.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_dividerVertical com.DGSD.WorkTracker:dividerVertical}</code></td><td> Drawable to use for generic vertical dividers.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_dropDownListViewStyle com.DGSD.WorkTracker:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_dropdownListPreferredItemHeight com.DGSD.WorkTracker:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_homeAsUpIndicator com.DGSD.WorkTracker:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_listPreferredItemHeightSmall com.DGSD.WorkTracker:listPreferredItemHeightSmall}</code></td><td> A smaller, sleeker list item height.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_listPreferredItemPaddingLeft com.DGSD.WorkTracker:listPreferredItemPaddingLeft}</code></td><td> The preferred padding along the left edge of list items.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_listPreferredItemPaddingRight com.DGSD.WorkTracker:listPreferredItemPaddingRight}</code></td><td> The preferred padding along the right edge of list items.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_popupMenuStyle com.DGSD.WorkTracker:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_spinnerItemStyle com.DGSD.WorkTracker:spinnerItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_textAppearanceLargePopupMenu com.DGSD.WorkTracker:textAppearanceLargePopupMenu}</code></td><td> Text color, typeface, size, and style for the text inside of a popup menu.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_textAppearanceListItemSmall com.DGSD.WorkTracker:textAppearanceListItemSmall}</code></td><td> The preferred TextAppearance for the primary text of small list items.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_textAppearanceSmall com.DGSD.WorkTracker:textAppearanceSmall}</code></td><td> Text color, typeface, size, and style for "small" text.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_textAppearanceSmallPopupMenu com.DGSD.WorkTracker:textAppearanceSmallPopupMenu}</code></td><td> Text color, typeface, size, and style for small text inside of a popup menu.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_textColorPrimary com.DGSD.WorkTracker:textColorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_textColorPrimaryInverse com.DGSD.WorkTracker:textColorPrimaryInverse}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowActionBar com.DGSD.WorkTracker:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowActionBarOverlay com.DGSD.WorkTracker:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowActionModeOverlay com.DGSD.WorkTracker:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowContentOverlay com.DGSD.WorkTracker:windowContentOverlay}</code></td><td> This Drawable is overlaid over the foreground of the Window's content area, usually
              to place a shadow below the title.</td></tr>
-           <tr><td><code>{@link #SherlockTheme_windowNoTitle com.DGSD.InvoiceTracker:windowNoTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #SherlockTheme_windowSplitActionBar com.DGSD.InvoiceTracker:windowSplitActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowNoTitle com.DGSD.WorkTracker:windowNoTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowSplitActionBar com.DGSD.WorkTracker:windowSplitActionBar}</code></td><td></td></tr>
            </table>
            @see #SherlockTheme_absForceOverflow
            @see #SherlockTheme_actionBarDivider
@@ -1652,7 +1780,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SherlockTheme_actionBarStyle = 4;
         /**
-          <p>This symbol is the offset where the {@link com.DGSD.InvoiceTracker.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link com.DGSD.WorkTracker.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -1674,7 +1802,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SherlockTheme_actionBarTabStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link com.DGSD.InvoiceTracker.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link com.DGSD.WorkTracker.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -1702,7 +1830,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SherlockTheme_actionBarWidgetTheme = 6;
         /**
-          <p>This symbol is the offset where the {@link com.DGSD.InvoiceTracker.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link com.DGSD.WorkTracker.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -1712,7 +1840,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SherlockTheme_actionButtonStyle = 32;
         /**
-          <p>This symbol is the offset where the {@link com.DGSD.InvoiceTracker.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link com.DGSD.WorkTracker.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -1761,7 +1889,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SherlockTheme_actionModeBackground = 14;
         /**
-          <p>This symbol is the offset where the {@link com.DGSD.InvoiceTracker.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link com.DGSD.WorkTracker.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -1807,7 +1935,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SherlockTheme_actionModeSplitBackground = 15;
         /**
-          <p>This symbol is the offset where the {@link com.DGSD.InvoiceTracker.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link com.DGSD.WorkTracker.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -1817,7 +1945,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SherlockTheme_actionModeStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link com.DGSD.InvoiceTracker.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link com.DGSD.WorkTracker.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -1827,7 +1955,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SherlockTheme_actionOverflowButtonStyle = 3;
         /**
-          <p>This symbol is the offset where the {@link com.DGSD.InvoiceTracker.R.attr#actionSpinnerItemStyle}
+          <p>This symbol is the offset where the {@link com.DGSD.WorkTracker.R.attr#actionSpinnerItemStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -1861,7 +1989,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SherlockTheme_dividerVertical = 30;
         /**
-          <p>This symbol is the offset where the {@link com.DGSD.InvoiceTracker.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link com.DGSD.WorkTracker.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -1871,7 +1999,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SherlockTheme_dropDownListViewStyle = 34;
         /**
-          <p>This symbol is the offset where the {@link com.DGSD.InvoiceTracker.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.DGSD.WorkTracker.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -1887,7 +2015,7 @@ containing a value of this type.
         */
         public static final int SherlockTheme_dropdownListPreferredItemHeight = 36;
         /**
-          <p>This symbol is the offset where the {@link com.DGSD.InvoiceTracker.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.DGSD.WorkTracker.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -1951,7 +2079,7 @@ containing a value of this type.
         */
         public static final int SherlockTheme_listPreferredItemPaddingRight = 28;
         /**
-          <p>This symbol is the offset where the {@link com.DGSD.InvoiceTracker.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link com.DGSD.WorkTracker.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -1961,7 +2089,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SherlockTheme_popupMenuStyle = 35;
         /**
-          <p>This symbol is the offset where the {@link com.DGSD.InvoiceTracker.R.attr#spinnerItemStyle}
+          <p>This symbol is the offset where the {@link com.DGSD.WorkTracker.R.attr#spinnerItemStyle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -2019,7 +2147,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SherlockTheme_textAppearanceSmallPopupMenu = 21;
         /**
-          <p>This symbol is the offset where the {@link com.DGSD.InvoiceTracker.R.attr#textColorPrimary}
+          <p>This symbol is the offset where the {@link com.DGSD.WorkTracker.R.attr#textColorPrimary}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -2034,7 +2162,7 @@ containing a value of this type.
         */
         public static final int SherlockTheme_textColorPrimary = 23;
         /**
-          <p>This symbol is the offset where the {@link com.DGSD.InvoiceTracker.R.attr#textColorPrimaryInverse}
+          <p>This symbol is the offset where the {@link com.DGSD.WorkTracker.R.attr#textColorPrimaryInverse}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -2049,7 +2177,7 @@ containing a value of this type.
         */
         public static final int SherlockTheme_textColorPrimaryInverse = 24;
         /**
-          <p>This symbol is the offset where the {@link com.DGSD.InvoiceTracker.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link com.DGSD.WorkTracker.R.attr#windowActionBar}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -2063,7 +2191,7 @@ containing a value of this type.
         */
         public static final int SherlockTheme_windowActionBar = 39;
         /**
-          <p>This symbol is the offset where the {@link com.DGSD.InvoiceTracker.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link com.DGSD.WorkTracker.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -2077,7 +2205,7 @@ containing a value of this type.
         */
         public static final int SherlockTheme_windowActionBarOverlay = 40;
         /**
-          <p>This symbol is the offset where the {@link com.DGSD.InvoiceTracker.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link com.DGSD.WorkTracker.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -2104,7 +2232,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SherlockTheme_windowContentOverlay = 19;
         /**
-          <p>This symbol is the offset where the {@link com.DGSD.InvoiceTracker.R.attr#windowNoTitle}
+          <p>This symbol is the offset where the {@link com.DGSD.WorkTracker.R.attr#windowNoTitle}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 
@@ -2118,7 +2246,7 @@ containing a value of this type.
         */
         public static final int SherlockTheme_windowNoTitle = 38;
         /**
-          <p>This symbol is the offset where the {@link com.DGSD.InvoiceTracker.R.attr#windowSplitActionBar}
+          <p>This symbol is the offset where the {@link com.DGSD.WorkTracker.R.attr#windowSplitActionBar}
           attribute's value can be found in the {@link #SherlockTheme} array.
 
 

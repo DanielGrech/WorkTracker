@@ -1,14 +1,15 @@
 package com.DGSD.WorkTracker.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.DGSD.InvoiceTracker.R;
-import com.DGSD.WorkTracker.WTApp;
+import com.DGSD.WorkTracker.R;
+import com.DGSD.WorkTracker.Activity.ItemListActivity;
+import com.DGSD.WorkTracker.Activity.NewItemActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
@@ -23,12 +24,13 @@ import com.actionbarsherlock.view.MenuItem;
  */
 public class DashboardFragment extends BaseFragment implements
 		View.OnClickListener {
-	private static final String TAG = DashboardFragment.class.getSimpleName();
 
 	private Button mNewListBtn;
 	private Button mNewItemBtn;
 	private Button mPreviousListsBtn;
+	private Button mPreviousItemsBtn;
 	private Button mSettingsBtn;
+	
 
 	public static DashboardFragment newInstance() {
 		DashboardFragment f = new DashboardFragment();
@@ -40,7 +42,6 @@ public class DashboardFragment extends BaseFragment implements
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		// This fragment has an options menu
 		setHasOptionsMenu(true);
 	}
 
@@ -50,32 +51,21 @@ public class DashboardFragment extends BaseFragment implements
 		View v = inflater
 				.inflate(R.layout.fragment_dashboard, container, false);
 
-		if(WTApp.DEBUG) {
-			Log.v(TAG, "Creating View");
-		}
-			
 		// Get references to dashboard buttons
 		mNewListBtn = (Button) v.findViewById(R.id.btn_dashboard_new_list);
 		mNewItemBtn = (Button) v.findViewById(R.id.btn_dashboard_new_item);
 		mPreviousListsBtn = (Button) v.findViewById(R.id.btn_dashboard_previous_lists);
+		mPreviousItemsBtn = (Button) v.findViewById(R.id.btn_dashboard_previous_items);
 		mSettingsBtn = (Button) v.findViewById(R.id.btn_dashboard_settings);
 
 		// Set listeners for buttons
 		mNewListBtn.setOnClickListener(this);
 		mNewItemBtn.setOnClickListener(this);
 		mPreviousListsBtn.setOnClickListener(this);
+		mPreviousItemsBtn.setOnClickListener(this);
 		mSettingsBtn.setOnClickListener(this);
 		
 		return v;
-	}
-
-	@Override
-	public void onSaveInstanceState(Bundle outState) {
-		super.onSaveInstanceState(outState);
-
-		if (WTApp.DEBUG)
-			Log.v(TAG, "Saving State");
-
 	}
 
 	@Override
@@ -111,12 +101,17 @@ public class DashboardFragment extends BaseFragment implements
 
 				break;
 			}
-			
 			case R.id.btn_dashboard_settings: {
 				break;
 			}
+			case R.id.btn_dashboard_previous_items: {
+				Intent intent = new Intent(getActivity(), ItemListActivity.class);
+				startActivity(intent);
+				break;
+			}
 			case R.id.btn_dashboard_new_item: {
-				
+				Intent intent = new Intent(getActivity(), NewItemActivity.class);
+				startActivity(intent);
 				break;
 			}
 		}
