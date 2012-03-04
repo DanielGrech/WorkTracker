@@ -744,46 +744,63 @@ containing a value of this type.
         public static final int abs__textButton=0x7f050013;
         public static final int abs__title=0x7f050017;
         public static final int abs__up=0x7f05000b;
-        public static final int add=0x7f05003e;
-        public static final int btn_add_new_image=0x7f050032;
-        public static final int btn_dashboard_new_item=0x7f050024;
-        public static final int btn_dashboard_new_list=0x7f050022;
-        public static final int btn_dashboard_previous_items=0x7f050025;
-        public static final int btn_dashboard_previous_lists=0x7f050023;
-        public static final int btn_dashboard_settings=0x7f050026;
-        public static final int btn_dashboard_settings_temp=0x7f050027;
+        public static final int add=0x7f05004f;
+        public static final int add_to_list=0x7f05004a;
+        public static final int btn_add_new_image=0x7f05003f;
+        public static final int btn_dashboard_new_item=0x7f050025;
+        public static final int btn_dashboard_new_list=0x7f050023;
+        public static final int btn_dashboard_previous_items=0x7f050026;
+        public static final int btn_dashboard_previous_lists=0x7f050024;
+        public static final int btn_dashboard_settings=0x7f050027;
+        public static final int btn_dashboard_settings_temp=0x7f050028;
         public static final int container=0x7f050021;
-        public static final int delete=0x7f05003a;
-        public static final int description=0x7f050037;
+        public static final int delete=0x7f05004b;
+        public static final int description=0x7f050044;
         public static final int disableHome=0x7f050009;
         public static final int homeAsUp=0x7f050006;
-        public static final int image=0x7f050034;
-        public static final int item_details_description=0x7f05002d;
-        public static final int item_details_label_description=0x7f05002c;
-        public static final int item_details_label_name=0x7f05002a;
-        public static final int item_details_label_price=0x7f05002e;
-        public static final int item_details_name=0x7f05002b;
-        public static final int item_details_price=0x7f05002f;
-        public static final int item_details_section_title=0x7f050029;
-        public static final int item_image_label=0x7f050031;
-        public static final int item_image_section_title=0x7f050030;
-        public static final int item_list_item_wrapper=0x7f050033;
-        public static final int list=0x7f050028;
+        public static final int horizontal_divider=0x7f05002a;
+        public static final int image=0x7f050041;
+        public static final int item_code=0x7f05002c;
+        public static final int item_code_label=0x7f05002b;
+        public static final int item_description=0x7f050030;
+        public static final int item_description_label=0x7f05002f;
+        public static final int item_details_description=0x7f05003a;
+        public static final int item_details_label_description=0x7f050039;
+        public static final int item_details_label_name=0x7f050037;
+        public static final int item_details_label_price=0x7f05003b;
+        public static final int item_details_name=0x7f050038;
+        public static final int item_details_price=0x7f05003c;
+        public static final int item_details_section_title=0x7f050036;
+        public static final int item_image_label=0x7f05003e;
+        public static final int item_image_section_title=0x7f05003d;
+        public static final int item_list_item_wrapper=0x7f050040;
+        public static final int item_name=0x7f05002e;
+        public static final int item_name_label=0x7f05002d;
+        public static final int item_price=0x7f050032;
+        public static final int item_price_label=0x7f050031;
+        public static final int item_quantity=0x7f050034;
+        public static final int item_quantity_label=0x7f050033;
+        public static final int list=0x7f050035;
         public static final int listMode=0x7f050002;
-        public static final int name=0x7f050036;
+        public static final int minus=0x7f050045;
+        public static final int name=0x7f050043;
         public static final int normal=0x7f050001;
-        public static final int price=0x7f050035;
-        public static final int save=0x7f050040;
-        public static final int search=0x7f05003f;
-        public static final int section_header_wrapper=0x7f050038;
+        public static final int number=0x7f050046;
+        public static final int pager=0x7f050022;
+        public static final int plus=0x7f050047;
+        public static final int populate_from_saved_items_btn=0x7f050029;
+        public static final int price=0x7f050042;
+        public static final int save=0x7f050051;
+        public static final int search=0x7f050050;
+        public static final int section_header_wrapper=0x7f050048;
         public static final int showCustom=0x7f050008;
         public static final int showHome=0x7f050005;
         public static final int showTitle=0x7f050007;
-        public static final int sort=0x7f05003b;
-        public static final int sort_by_name=0x7f05003c;
-        public static final int sort_by_price=0x7f05003d;
+        public static final int sort=0x7f05004c;
+        public static final int sort_by_name=0x7f05004d;
+        public static final int sort_by_price=0x7f05004e;
         public static final int tabMode=0x7f050003;
-        public static final int text=0x7f050039;
+        public static final int text=0x7f050049;
         public static final int useLogo=0x7f050004;
         public static final int wrap_content=0x7f050000;
     }
@@ -808,17 +825,21 @@ containing a value of this type.
         public static final int abs__screen_simple=0x7f03000e;
         public static final int abs__screen_simple_overlay_action_mode=0x7f03000f;
         public static final int activity_with_single_fragment=0x7f030010;
-        public static final int fragment_dashboard=0x7f030011;
-        public static final int fragment_item_list=0x7f030012;
-        public static final int fragment_new_item=0x7f030013;
-        public static final int item_list_item=0x7f030014;
-        public static final int section_header=0x7f030015;
-        public static final int sherlock_spinner_item=0x7f030016;
+        public static final int activity_with_single_pager=0x7f030011;
+        public static final int fragment_dashboard=0x7f030012;
+        public static final int fragment_edit_list=0x7f030013;
+        public static final int fragment_item_list=0x7f030014;
+        public static final int fragment_new_item=0x7f030015;
+        public static final int item_list_item=0x7f030016;
+        public static final int number_picker=0x7f030017;
+        public static final int section_header=0x7f030018;
+        public static final int sherlock_spinner_item=0x7f030019;
     }
     public static final class menu {
-        public static final int item_list_contextual_menu=0x7f0c0000;
-        public static final int item_list_menu=0x7f0c0001;
-        public static final int new_item_menu=0x7f0c0002;
+        public static final int add_item_to_list_menu=0x7f0c0000;
+        public static final int item_list_contextual_menu=0x7f0c0001;
+        public static final int item_list_menu=0x7f0c0002;
+        public static final int new_item_menu=0x7f0c0003;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -832,34 +853,45 @@ containing a value of this type.
         public static final int abs__action_menu_overflow_description=0x7f0a0002;
         public static final int add=0x7f0a000a;
         public static final int add_item=0x7f0a0020;
+        public static final int add_item_from_list=0x7f0a0030;
+        public static final int add_item_tab=0x7f0a002e;
+        public static final int add_new_item_title=0x7f0a0026;
         /**  App constants 
          */
         public static final int app_name=0x7f0a0003;
         public static final int btn_add_new_image=0x7f0a001a;
         public static final int btn_dashboard_new_item=0x7f0a000f;
-        /**  Dashboard 
-         */
         public static final int btn_dashboard_new_list=0x7f0a000e;
         public static final int btn_dashboard_previous_items=0x7f0a0012;
         public static final int btn_dashboard_previous_lists=0x7f0a0010;
         public static final int btn_dashboard_settings=0x7f0a0011;
         public static final int changed_data=0x7f0a001d;
         public static final int changed_data_message=0x7f0a001e;
-        /**  Various activity titles 
+        /**  Dashboard 
          */
         public static final int dashboard_title=0x7f0a000d;
         public static final int delete=0x7f0a000b;
         public static final int delete_item=0x7f0a001b;
+        /**  Edit List 
+         */
+        public static final int edit_list_title=0x7f0a0025;
+        public static final int item_code=0x7f0a0027;
+        public static final int item_completion_hint=0x7f0a0029;
         public static final int item_delete_message=0x7f0a001c;
+        public static final int item_description=0x7f0a002a;
         public static final int item_details_description=0x7f0a0016;
         public static final int item_details_label_price=0x7f0a0017;
         public static final int item_details_name=0x7f0a0015;
         public static final int item_details_section_title=0x7f0a0014;
         public static final int item_image_label=0x7f0a0019;
         public static final int item_image_section_title=0x7f0a0018;
+        public static final int item_list_tab=0x7f0a002f;
         /**  Item list 
          */
         public static final int item_list_title=0x7f0a001f;
+        public static final int item_name=0x7f0a0028;
+        public static final int item_price=0x7f0a002b;
+        public static final int item_quantity=0x7f0a002c;
         /**  New Item 
          */
         public static final int new_item_title=0x7f0a0013;
@@ -867,7 +899,12 @@ containing a value of this type.
         public static final int permission_database_access_description=0x7f0a0005;
         public static final int permission_receive_broadcast=0x7f0a0006;
         public static final int permission_receive_broadcast_description=0x7f0a0007;
+        public static final int populate_from_saved_items_btn=0x7f0a0031;
+        /**  Previous List 
+         */
+        public static final int previous_list_title=0x7f0a0032;
         public static final int save=0x7f0a0009;
+        public static final int saved_item_list_title=0x7f0a002d;
         /**  Common 
          */
         public static final int search=0x7f0a0008;

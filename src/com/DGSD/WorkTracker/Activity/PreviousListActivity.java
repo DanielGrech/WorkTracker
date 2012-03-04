@@ -19,9 +19,9 @@ import com.actionbarsherlock.view.ActionMode;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 
-public class ItemListActivity extends BaseActivitySingleFragment implements
+public class PreviousListActivity extends BaseActivitySingleFragment implements
 		DialogInterface.OnClickListener, OnListItemLongClickListener {
-	private static final String TAG = ItemListActivity.class.getName();
+	private static final String TAG = PreviousListActivity.class.getName();
 
 	private int mLastItemId = -1;
 	private String mLastItemTitle = null;
@@ -47,7 +47,7 @@ public class ItemListActivity extends BaseActivitySingleFragment implements
 
 	@Override
 	protected String getActionBarTitle() {
-		return getResources().getString(R.string.item_list_title);
+		return getResources().getString(R.string.previous_list_title);
 	}
 
 	@Override

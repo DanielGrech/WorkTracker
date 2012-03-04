@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wt="http://schemas.android.com/apk/res/com.DGSD.WorkTracker"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="@dimen/padding" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="@dimen/padding" >
+
+        <Button
+            android:id="@+id/populate_from_saved_items_btn"
+			android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding"
+            android:text="@string/populate_from_saved_items_btn"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            style="@style/green_button" />
+
+        <View
+            android:id="@+id/horizontal_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_below="@id/populate_from_saved_items_btn"
+            android:background="@color/border_color" />
+        
+        <TextView
+            android:id="@+id/item_code_label"
+            style="@style/Label_Text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horizontal_divider"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:text="@string/item_code" />
+        
+        <com.DGSD.WorkTracker.View.StatefulEditText
+            android:id="@+id/item_code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_code_label"
+            android:layout_marginBottom="@dimen/padding_small" />
+        
+        <TextView
+            android:id="@+id/item_name_label"
+            style="@style/Label_Text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_code"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:text="@string/item_name" />
+
+        <AutoCompleteTextView
+            android:id="@+id/item_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_name_label"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:completionHint="@string/item_completion_hint"
+            android:completionThreshold="2" />
+
+        <TextView
+            android:id="@+id/item_description_label"
+            style="@style/Label_Text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_name"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:text="@string/item_description" />
+
+        <com.DGSD.WorkTracker.View.StatefulEditText
+            android:id="@+id/item_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_description_label"
+            android:layout_marginBottom="@dimen/padding_small" />
+
+        <TextView
+            android:id="@+id/item_price_label"
+            style="@style/Label_Text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_description"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:text="@string/item_price" />
+
+        <com.DGSD.WorkTracker.View.StatefulEditText
+            android:id="@+id/item_price"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_price_label"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/item_quantity_label"
+            style="@style/Label_Text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_price"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:text="@string/item_quantity" />
+
+        <com.DGSD.WorkTracker.View.NumberPickerView
+            android:id="@+id/item_quantity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_quantity_label"
+            android:layout_marginBottom="@dimen/padding_small" />
+
+    </RelativeLayout>
+
+</ScrollView>

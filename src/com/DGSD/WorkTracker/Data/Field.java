@@ -14,6 +14,16 @@ public class Field implements Parcelable {
 	public static final Field ITEM_NAME = new Field("_item_name", "text");
 	public static final Field ITEM_DESC = new Field("_item_desc", "text");
 	public static final Field ITEM_PRICE = new Field("_item_price", "real");
+	public static final Field DATE = new Field("_date", "integer");
+	public static final Field LOCATION_NAME = new Field("_location_name", "text");
+	public static final Field LOCATION_LAT = new Field("_lat", "real");
+	public static final Field LOCATION_LON = new Field("_lon", "real");
+	public static final Field LIST_NAME = new Field("_list_name", "text");
+	public static final Field LIST_ID = new Field("_list_id", "integer");
+	public static final Field ITEM_CODE = new Field("_item_code", "text");
+	public static final Field QUANTITY = new Field("_quantity", "integer");
+	public static final Field TOTAL_PRICE = new Field("_total_price", "real");
+	public static final Field TOTAL_NUM_ITEMS = new Field("_total_num_items", "integer");
 	
 	private String name;
 	private String type;

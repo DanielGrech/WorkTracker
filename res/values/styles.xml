@@ -21,6 +21,7 @@
     <style name="base_button" parent="android:style/Widget.Button">
         <item name="android:textColor">@color/base_button_text_color</item>
         <item name="android:background">@drawable/grad_btn_silver</item>
+        <item name="android:textStyle">bold</item>
     </style>
     
     <style name="green_button" parent="@style/base_button">

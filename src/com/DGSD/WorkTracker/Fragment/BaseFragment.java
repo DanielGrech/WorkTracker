@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.DGSD.WorkTracker.Constants;
+import com.DGSD.WorkTracker.Constants.Extra;
 import com.DGSD.WorkTracker.PortableReceiver;
 import com.DGSD.WorkTracker.Receiver;
 import com.DGSD.WorkTracker.WTApp;
@@ -79,5 +80,12 @@ public abstract class BaseFragment extends SherlockDialogFragment implements Rec
     	if(WTApp.DEBUG) {
     		Log.w(TAG, "No onReceive() listener registered");
     	}
+    }
+    
+    
+    @Override
+    public void startActivityForResult(Intent intent, int requestCode) {
+        intent.putExtra(Extra.REQUEST_CODE, requestCode);
+        super.startActivityForResult(intent, requestCode);
     }
 }

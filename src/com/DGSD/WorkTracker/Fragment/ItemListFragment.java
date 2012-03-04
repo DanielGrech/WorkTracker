@@ -1,31 +1,22 @@
 package com.DGSD.WorkTracker.Fragment;
 
-import java.text.NumberFormat;
-
+import android.app.Activity;
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
-import android.support.v4.app.LoaderManager;
-import android.support.v4.content.CursorLoader;
-import android.support.v4.content.Loader;
-import android.support.v4.widget.SimpleCursorAdapter;
-import android.support.v4.widget.SimpleCursorAdapter.ViewBinder;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
-import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.TextView;
 
 import com.DGSD.WorkTracker.Constants.Extra;
 import com.DGSD.WorkTracker.R;
 import com.DGSD.WorkTracker.Activity.NewItemActivity;
 import com.DGSD.WorkTracker.Data.Field;
 import com.DGSD.WorkTracker.Data.Entity.ItemEntity;
-import com.DGSD.WorkTracker.Data.Provider.ItemProvider;
+import com.DGSD.WorkTracker.View.SavedItemListView;
+import com.DGSD.WorkTracker.View.SavedItemListView.ViewHolder;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
@@ -34,27 +25,12 @@ import com.actionbarsherlock.view.MenuItem;
  * 
  * @author Daniel Grech
  */
-public class ItemListFragment extends BaseFragment implements ViewBinder,
-		LoaderManager.LoaderCallbacks<Cursor>, OnItemClickListener,
-		OnItemLongClickListener {
+public class ItemListFragment extends BaseFragment implements
+		OnItemClickListener, OnItemLongClickListener {
 
-	private ListView mList;
-
-	private String mSortBy;
-
-	private SimpleCursorAdapter mAdapter;
-
-	private static final NumberFormat mCurrencyFormat = NumberFormat
-			.getCurrencyInstance();
+	private SavedItemListView mList;
 
 	private OnListItemLongClickListener mOnListItemLongClickListener;
-
-	private static class CursorCols {
-		public static int id = -1;
-		public static int name = -1;
-		public static int desc = -1;
-		public static int price = -1;
-	}
 
 	public static ItemListFragment newInstance() {
 		return new ItemListFragment();
@@ -64,8 +40,6 @@ public class ItemListFragment extends BaseFragment implements ViewBinder,
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setHasOptionsMenu(true);
-
-		mSortBy = Field.ITEM_NAME.getName();
 	}
 
 	@Override
@@ -74,17 +48,9 @@ public class ItemListFragment extends BaseFragment implements ViewBinder,
 		View v = inflater
 				.inflate(R.layout.fragment_item_list, container, false);
 
-		mList = (ListView) v.findViewById(R.id.list);
+		mList = (SavedItemListView) v.findViewById(R.id.list);
 		mList.setOnItemClickListener(this);
 		mList.setOnItemLongClickListener(this);
-
-		mAdapter = new SimpleCursorAdapter(getActivity(),
-				R.layout.item_list_item, null,
-				new String[] { Field.ID.getName() },
-				new int[] { R.id.item_list_item_wrapper }, 0);
-		mAdapter.setViewBinder(this);
-
-		mList.setAdapter(mAdapter);
 
 		return v;
 	}
@@ -92,7 +58,6 @@ public class ItemListFragment extends BaseFragment implements ViewBinder,
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
-		getLoaderManager().initLoader(0, null, this);
 	}
 
 	@Override
@@ -114,74 +79,14 @@ public class ItemListFragment extends BaseFragment implements ViewBinder,
 				startActivity(intent);
 				return true;
 			case R.id.sort_by_name:
-				mSortBy = Field.ITEM_NAME.getName();
-				getLoaderManager().restartLoader(0, null, this);
+				mList.setSortBy(Field.ITEM_NAME.getName() + " COLLATE NOCASE");
 				return true;
 			case R.id.sort_by_price:
-				mSortBy = Field.ITEM_PRICE.getName();
-				getLoaderManager().restartLoader(0, null, this);
+				mList.setSortBy(Field.ITEM_PRICE.getName());
 				return true;
 			default:
 				return super.onOptionsItemSelected(menuItem);
 		}
-	}
-
-	@Override
-	public void onLoadFinished(Loader<Cursor> loader, Cursor cursor) {
-		mAdapter.swapCursor(cursor);
-	}
-
-	@Override
-	public void onLoaderReset(Loader<Cursor> loader) {
-		mAdapter.swapCursor(null);
-	}
-
-	@Override
-	public Loader<Cursor> onCreateLoader(int id, Bundle args) {
-		return new CursorLoader(getActivity(), ItemProvider.CONTENT_URI, null,
-				null, null, mSortBy);
-	}
-
-	@Override
-	public boolean setViewValue(View view, Cursor cursor, int col) {
-		if (view == null) {
-			LayoutInflater inflater = getActivity().getLayoutInflater();
-			view = inflater.inflate(R.layout.item_list_item, null);
-		}
-
-		if (CursorCols.id < 0) {
-			CursorCols.id = cursor.getColumnIndex(Field.ID.getName());
-			CursorCols.name = cursor.getColumnIndex(Field.ITEM_NAME.getName());
-			CursorCols.desc = cursor.getColumnIndex(Field.ITEM_DESC.getName());
-			CursorCols.price = cursor
-					.getColumnIndex(Field.ITEM_PRICE.getName());
-		}
-
-		ViewHolder holder = (ViewHolder) view.getTag();
-		if (holder == null) {
-			holder = new ViewHolder();
-			holder.price = (TextView) view.findViewById(R.id.price);
-			holder.name = (TextView) view.findViewById(R.id.name);
-			holder.desc = (TextView) view.findViewById(R.id.description);
-			holder.image = (ImageView) view.findViewById(R.id.image);
-		}
-
-		holder.id = cursor.getInt(CursorCols.id);
-		holder.name.setText(cursor.getString(CursorCols.name));
-		holder.desc.setText(cursor.getString(CursorCols.desc));
-		holder.price.setText(mCurrencyFormat.format(cursor
-				.getFloat(CursorCols.price)));
-
-		if (holder.item == null) {
-			holder.item = new ItemEntity();
-		}
-
-		holder.item.setName(cursor.getString(CursorCols.name));
-		holder.item.setDescription(cursor.getString(CursorCols.desc));
-		holder.item.setPrice(cursor.getFloat(CursorCols.price));
-
-		view.setTag(holder);
-		return true;
 	}
 
 	@Override
@@ -205,7 +110,7 @@ public class ItemListFragment extends BaseFragment implements ViewBinder,
 		ViewHolder holder = (ViewHolder) view.getTag();
 
 		if (holder != null) {
-			doClick(holder.id);
+			doClick(holder.id, holder.item);
 		}
 	}
 
@@ -213,20 +118,19 @@ public class ItemListFragment extends BaseFragment implements ViewBinder,
 		mOnListItemLongClickListener = l;
 	}
 
-	public void doClick(int itemId) {
-		Intent intent = new Intent(getActivity(), NewItemActivity.class);
-		intent.putExtra(Extra.ID, itemId);
+	public void doClick(int itemId, ItemEntity item) {
+		Intent activityIntent = getActivity().getIntent();
+		if(activityIntent.getIntExtra(Extra.REQUEST_CODE, -1) != -1) {
+			//This activity was started from startActivityFromResult()
+			activityIntent.putExtra(Extra.ITEM, item);
+			getActivity().setResult(Activity.RESULT_OK, activityIntent);
+			getActivity().finish();
+		} else {
+			Intent intent = new Intent(getActivity(), NewItemActivity.class);
+			intent.putExtra(Extra.ID, itemId);
 
-		getActivity().startActivity(intent);
-	}
-
-	private static class ViewHolder {
-		public int id;
-		public ItemEntity item;
-		public TextView price;
-		public TextView name;
-		public TextView desc;
-		public ImageView image;
+			getActivity().startActivity(intent);
+		}
 	}
 
 	public static interface OnListItemLongClickListener {

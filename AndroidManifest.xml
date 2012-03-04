@@ -34,6 +34,7 @@
             
         <activity android:name="com.DGSD.WorkTracker.Activity.DashboardActivity" />
         <activity android:name="com.DGSD.WorkTracker.Activity.NewItemActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.DGSD.WorkTracker.Activity.EditListActivity" android:uiOptions="splitActionBarWhenNarrow" android:windowSoftInputMode="stateHidden"/>
         
         <!-- Services -->
         <service android:name="com.DGSD.WorkTracker.Service.DatabaseService" android:permission="com.DGSD.WorkTracker.database_access"/>

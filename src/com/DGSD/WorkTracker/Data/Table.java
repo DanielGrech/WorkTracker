@@ -7,11 +7,39 @@ package com.DGSD.WorkTracker.Data;
  */
 public class Table {
 	
+	/**
+	 * Table to hold saved items only
+	 */
 	public static final Table ITEMS = new Table("_items", new Field[] {
 		Field.ID,
 		Field.ITEM_NAME,
 		Field.ITEM_DESC,
 		Field.ITEM_PRICE
+	});
+	
+	/**
+	 * Table to hold items associated with a list
+	 */
+	public static final Table LIST_ITEMS = new Table("_list_items", new Field[] {
+		Field.ID,
+		Field.LIST_ID,
+		Field.ITEM_CODE,
+		Field.ITEM_NAME,
+		Field.ITEM_DESC,
+		Field.ITEM_PRICE,
+		Field.QUANTITY
+	});
+	
+	/**
+	 * Table to hold users individual lists
+	 */
+	public static final Table LISTS = new Table("_lists", new Field[] {
+		Field.ID,
+		Field.DATE,
+		Field.LIST_NAME,
+		Field.LOCATION_NAME,
+		Field.LOCATION_LAT,
+		Field.LOCATION_LON
 	});
 	
 	private String name;

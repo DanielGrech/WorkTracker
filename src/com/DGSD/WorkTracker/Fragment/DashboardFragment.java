@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.DGSD.WorkTracker.R;
+import com.DGSD.WorkTracker.Activity.EditListActivity;
 import com.DGSD.WorkTracker.Activity.ItemListActivity;
 import com.DGSD.WorkTracker.Activity.NewItemActivity;
 import com.actionbarsherlock.view.Menu;
@@ -94,7 +95,8 @@ public class DashboardFragment extends BaseFragment implements
 
 		switch (id) {
 			case R.id.btn_dashboard_new_list: {
-
+				Intent intent = new Intent(getActivity(), EditListActivity.class);
+				startActivity(intent);
 				break;
 			}
 			case R.id.btn_dashboard_previous_lists: {

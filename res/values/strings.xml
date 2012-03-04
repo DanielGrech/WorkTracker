@@ -14,10 +14,8 @@
     <string name="delete">Delete</string>
     <string name="sort_by">Sort By</string>
         
-    <!-- Various activity titles -->
-    <string name="dashboard_title">@string/app_name</string>
-
     <!-- Dashboard -->
+    <string name="dashboard_title">@string/app_name</string>
     <string name="btn_dashboard_new_list">New List</string>
     <string name="btn_dashboard_new_item">New List Item</string>
     <string name="btn_dashboard_previous_lists">Previous Lists</string>
@@ -45,4 +43,23 @@
     <string name="sort_by_price">Sort by price</string>
     <string name="search_items">Search Items</string>
     <string name="search_items_hint">Search by name or description</string>
+    
+	<!-- Edit List -->
+    <string name="edit_list_title">Item List</string>
+    <string name="add_new_item_title">Add To List</string>
+    <string name="item_code">Item Code</string>
+    <string name="item_name">Item Name</string>
+    <string name="item_completion_hint">Type an item name</string>
+    <string name="item_description">Description (optional)</string>
+    <string name="item_price">Price</string>
+    <string name="item_quantity">Quantity</string>
+    <string name="saved_item_list_title">Saved Items</string>
+    <string name="add_item_tab">Add Item</string>
+    <string name="item_list_tab">Current Items</string>
+    <string name="add_item_from_list">Add Item</string>
+    <string name="populate_from_saved_items_btn">Get From Saved Item</string>
+        
+    <!-- Previous List -->
+    <string name="previous_list_title">Previous Lists</string>
+    
 </resources>

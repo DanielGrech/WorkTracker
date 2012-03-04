@@ -23,6 +23,8 @@ public class Constants {
 		public static final String DATA_TYPE = "com.DGSD.WorkTracker.data_type";
 		public static final String CONTENT_VALUES = "com.DGSD.WorkTracker.content_values";
 		public static final String FIELDS = "com.DGSD.WorkTracker.fields";
+		public static final String ITEM = "com.DGSD.WorkTracker.item_entity";
+		public static final String REQUEST_CODE = "com.DGSD.WorkTracker.request_code";
 
 	}
 }
