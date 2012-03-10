@@ -18,10 +18,8 @@
         android:layout_height="match_parent"
         android:layout_weight="3"
         android:layout_marginBottom="@dimen/padding_small"
-        android:gravity="center"
-        android:background="@null"
-        android:inputType="number" 
-        android:text="0"/>
+        android:text="0"
+        style="@style/wt_number_picker"/>
     
     <Button
         android:id="@+id/plus"

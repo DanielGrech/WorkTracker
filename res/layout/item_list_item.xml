@@ -12,6 +12,7 @@
         android:src="@drawable/ic_tools_icon"
         android:scaleType="fitCenter"
         android:layout_marginRight="@dimen/padding"
+        android:contentDescription="@string/item_image_section_title"
         android:layout_alignParentLeft="true"/>
     
     <TextView
@@ -39,7 +40,7 @@
 	        android:layout_marginTop="1dip"
 	        android:singleLine="true"
 	        android:ellipsize="end"
-	        style="@style/List_Text" />
+	        style="@style/Title" />
 	    
 	    <TextView
 	        android:id="@+id/description"

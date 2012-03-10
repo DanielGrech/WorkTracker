@@ -44,6 +44,11 @@
             android:multiprocess="true"
             android:permission="com.DGSD.WorkTracker.database_access"
             android:name="com.DGSD.WorkTracker.Data.Provider.ItemProvider" />
+        
+        <provider android:authorities="com.DGSD.WorkTracker.Data.Provider.ListProvider"
+            android:multiprocess="true"
+            android:permission="com.DGSD.WorkTracker.database_access"
+            android:name="com.DGSD.WorkTracker.Data.Provider.ListProvider" />
     </application>
 
     <!-- Custom Permissions -->

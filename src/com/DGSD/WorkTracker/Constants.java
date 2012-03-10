@@ -4,6 +4,7 @@ public class Constants {
 
 	public static class Authority {
 		public static final String ITEM_PROVIDER = "com.DGSD.WorkTracker.Data.Provider.ItemProvider";
+		public static final String LIST_PROVIDER = "com.DGSD.WorkTracker.Data.Provider.ListProvider";
 	}
 
 	public static class Permissions {

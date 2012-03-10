@@ -520,6 +520,10 @@ containing a value of this type.
         public static final int abs__split_action_bar_is_narrow=0x7f060001;
     }
     public static final class color {
+        public static final int ab_background_end=0x7f07001f;
+        public static final int ab_background_start=0x7f07001e;
+        public static final int ab_split_background_end=0x7f070021;
+        public static final int ab_split_background_start=0x7f070020;
         public static final int abs__background_holo_dark=0x7f070000;
         public static final int abs__background_holo_light=0x7f070001;
         public static final int abs__bright_foreground_disabled_holo_dark=0x7f070004;
@@ -528,24 +532,36 @@ containing a value of this type.
         public static final int abs__bright_foreground_holo_light=0x7f070003;
         public static final int abs__bright_foreground_inverse_holo_dark=0x7f070006;
         public static final int abs__bright_foreground_inverse_holo_light=0x7f070007;
-        public static final int abs__primary_text_holo_dark=0x7f070016;
-        public static final int abs__primary_text_holo_light=0x7f070017;
-        public static final int action_bar_title=0x7f070009;
-        public static final int action_item_text_color=0x7f07000a;
-        public static final int base_button_text_color=0x7f07000b;
-        public static final int blue_button_gradient_dark=0x7f070014;
-        public static final int blue_button_gradient_light=0x7f070015;
-        public static final int border_color=0x7f07000c;
-        public static final int dark_grey_text=0x7f07000e;
+        public static final int abs__primary_text_holo_dark=0x7f070024;
+        public static final int abs__primary_text_holo_light=0x7f070025;
+        public static final int action_bar_title=0x7f070022;
+        public static final int action_item_text_color=0x7f070023;
+        public static final int alt_list_item_background_end=0x7f070012;
+        public static final int alt_list_item_background_start=0x7f070011;
+        public static final int base_button_text_color=0x7f070009;
+        public static final int blue_button_gradient_dark=0x7f07001c;
+        public static final int blue_button_gradient_light=0x7f07001d;
+        public static final int border_color=0x7f07000a;
+        public static final int dark_text=0x7f07000c;
         public static final int dashboard_btn_text_color=0x7f070008;
+        public static final int edit_text_background_default=0x7f070015;
+        /**  Edit text 
+         */
+        public static final int edit_text_background_pressed=0x7f070014;
+        public static final int edit_text_border=0x7f070017;
+        public static final int edit_text_cursor=0x7f070016;
         /**  Gradient Buttons 
          */
-        public static final int green_button_gradient_dark=0x7f070010;
-        public static final int green_button_gradient_light=0x7f070011;
-        public static final int light_grey_text=0x7f07000d;
-        public static final int section_title=0x7f07000f;
-        public static final int silver_button_gradient_dark=0x7f070012;
-        public static final int silver_button_gradient_light=0x7f070013;
+        public static final int green_button_gradient_dark=0x7f070018;
+        public static final int green_button_gradient_light=0x7f070019;
+        public static final int light_text=0x7f07000b;
+        public static final int section_title=0x7f07000e;
+        public static final int silver_button_gradient_dark=0x7f07001a;
+        public static final int silver_button_gradient_light=0x7f07001b;
+        public static final int text_shadow=0x7f070013;
+        public static final int title_text=0x7f07000d;
+        public static final int window_background_end=0x7f070010;
+        public static final int window_background_start=0x7f07000f;
     }
     public static final class dimen {
         /**  Default height of an action bar. 
@@ -703,22 +719,29 @@ containing a value of this type.
         public static final int abs__tab_unselected_focused_holo=0x7f02004f;
         public static final int abs__tab_unselected_holo=0x7f020050;
         public static final int abs__tab_unselected_pressed_holo=0x7f020051;
-        public static final int grad_btn_blue=0x7f020052;
-        public static final int grad_btn_green=0x7f020053;
-        public static final int grad_btn_silver=0x7f020054;
-        public static final int ic_action_add=0x7f020055;
-        public static final int ic_action_cancel=0x7f020056;
-        public static final int ic_action_delete=0x7f020057;
-        public static final int ic_action_done=0x7f020058;
-        public static final int ic_action_search=0x7f020059;
-        public static final int ic_action_sort=0x7f02005a;
-        public static final int ic_dashboard_items=0x7f02005b;
-        public static final int ic_dashboard_new_item=0x7f02005c;
-        public static final int ic_dashboard_new_list=0x7f02005d;
-        public static final int ic_dashboard_previous_lists=0x7f02005e;
-        public static final int ic_dashboard_settings=0x7f02005f;
-        public static final int ic_launcher=0x7f020060;
-        public static final int ic_tools_icon=0x7f020061;
+        public static final int actionbar_background=0x7f020052;
+        public static final int actionbar_split_background=0x7f020053;
+        public static final int activated_background=0x7f020054;
+        public static final int edit_text_background=0x7f020055;
+        public static final int edit_text_cursor=0x7f020056;
+        public static final int grad_btn_blue=0x7f020057;
+        public static final int grad_btn_green=0x7f020058;
+        public static final int grad_btn_silver=0x7f020059;
+        public static final int ic_action_add=0x7f02005a;
+        public static final int ic_action_cancel=0x7f02005b;
+        public static final int ic_action_delete=0x7f02005c;
+        public static final int ic_action_done=0x7f02005d;
+        public static final int ic_action_search=0x7f02005e;
+        public static final int ic_action_sort=0x7f02005f;
+        public static final int ic_dashboard_items=0x7f020060;
+        public static final int ic_dashboard_new_item=0x7f020061;
+        public static final int ic_dashboard_new_list=0x7f020062;
+        public static final int ic_dashboard_previous_lists=0x7f020063;
+        public static final int ic_dashboard_settings=0x7f020064;
+        public static final int ic_launcher=0x7f020065;
+        public static final int ic_tools_icon=0x7f020066;
+        public static final int list_activated=0x7f020067;
+        public static final int wt_window_background=0x7f020068;
     }
     public static final class id {
         public static final int abs__action_bar=0x7f05001b;
@@ -915,11 +938,12 @@ containing a value of this type.
         public static final int sort_by_price=0x7f0a0022;
     }
     public static final class style {
-        public static final int DashboardButton=0x7f0b0043;
+        public static final int DashboardButton=0x7f0b004e;
+        public static final int Label_Text=0x7f0b004a;
+        public static final int List_Text=0x7f0b004b;
         /**  Text 
          */
-        public static final int Label_Text=0x7f0b0048;
-        public static final int List_Text=0x7f0b0049;
+        public static final int ShadowText=0x7f0b0048;
         public static final int Sherlock___Theme=0x7f0b0038;
         public static final int Sherlock___Theme_DarkActionBar=0x7f0b003a;
         public static final int Sherlock___Theme_Light=0x7f0b0039;
@@ -950,7 +974,8 @@ containing a value of this type.
         public static final int Theme_Sherlock_Light_ForceOverflow=0x7f0b0041;
         public static final int Theme_Sherlock_Light_NoActionBar=0x7f0b003f;
         public static final int Theme_Sherlock_NoActionBar=0x7f0b003e;
-        public static final int Theme_WorkTracker=0x7f0b004a;
+        public static final int Theme_WorkTracker=0x7f0b004f;
+        public static final int Title=0x7f0b0049;
         public static final int Widget=0x7f0b0000;
         public static final int Widget_Sherlock_ActionBar=0x7f0b0002;
         public static final int Widget_Sherlock_ActionBar_Solid=0x7f0b0003;
@@ -990,12 +1015,17 @@ containing a value of this type.
         public static final int Widget_Sherlock_TextView_SpinnerItem=0x7f0b0028;
         /**  Action Bar 
          */
-        public static final int action_bar_title=0x7f0b0044;
+        public static final int action_bar_title=0x7f0b0043;
         /**  Buttons 
          */
         public static final int base_button=0x7f0b0045;
         public static final int blue_button=0x7f0b0047;
+        /**  Widgets 
+         */
+        public static final int edit_text=0x7f0b004c;
         public static final int green_button=0x7f0b0046;
+        public static final int wt_actionbar=0x7f0b0044;
+        public static final int wt_number_picker=0x7f0b004d;
     }
     public static final class xml {
         public static final int searchable_items=0x7f040000;

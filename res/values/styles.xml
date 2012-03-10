@@ -1,21 +1,16 @@
 <resources>
-    <style name="DashboardButton">
-        <item name="android:layout_gravity">center_vertical</item>
-        <item name="android:layout_width">72dp</item>
-        <item name="android:layout_height">72dp</item>
-        <item name="android:gravity">center_horizontal</item>
-        <item name="android:drawablePadding">2dp</item>
-        <item name="android:textSize">18sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/dashboard_btn_text_color</item>
-        <item name="android:background">@null</item>
-    </style>
-
-
     <!-- Action Bar -->
     <style name="action_bar_title" parent="@android:style/TextAppearance.Medium">
         <item name="android:textColor">@color/action_bar_title</item>
     </style>
+    
+    <style name="wt_actionbar" parent="Widget.Sherlock.ActionBar.Solid">
+        <item name="background">@drawable/actionbar_background</item>
+        <item name="android:background">@drawable/actionbar_background</item>
+        
+        <item name="backgroundSplit">@drawable/actionbar_split_background</item>
+        <item name="android:backgroundSplit">@drawable/actionbar_split_background</item>
+    </style>    
     
     <!-- Buttons -->
     <style name="base_button" parent="android:style/Widget.Button">
@@ -37,11 +32,56 @@
     </style>
  
     <!-- Text -->
-    <style name="Label_Text" parent="android:style/TextAppearance.Small.Inverse">
-        <item name="android:textColor">@color/light_grey_text</item>
+    <style name="ShadowText">
+        <item name="android:shadowColor">@color/text_shadow</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="Title">
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/title_text</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="Label_Text" parent="ShadowText">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/light_text</item>
     </style>
         
     <style name="List_Text" parent="android:style/TextAppearance.Medium.Inverse">
-    	<item name="android:textColor">@color/dark_grey_text</item>
+    	<item name="android:textColor">@color/dark_text</item>
     </style>  
+    
+    <!-- Widgets -->
+    <style name="edit_text" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:textColor">@color/dark_text</item>
+        <item name="android:textCursorDrawable">@drawable/edit_text_cursor</item>
+    </style>
+    
+    <style name="wt_number_picker" parent="@android:style/Widget.EditText">
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">number</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/title_text</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textCursorDrawable">@drawable/edit_text_cursor</item>
+    </style>
+    
+    <style name="DashboardButton" parent="Title">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@null</item>
+    </style>
 </resources>
